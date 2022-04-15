@@ -25,21 +25,22 @@ The main reasons for turning it into an independent repository are:<br>
 <br><br>
 ## 3. Installation<br>
 Download CSP-Rules-Examples from the master branch (by clicking the "Code" button and then the "Download zip" option), unzip the resulting file, rename it to "CSP-Rules-Examples" (in particular, delete the possible "-master" part in its name.<br>
-If you just want to have a look at the exaples, that's all you need to do. If you want to run the examples for yourself with the CSP-Rules-V2.1 software, move the "CSP-Rules-Examples" folder into the "CSP-Rules" folder you have created when installing CSP-Rules-V2.1. (Notice: into the "CSP-Rules" folder, not into the CSP-Rules-V2.1 folder!) That way, you should be able to directly copy and paste the commands present in the example files.
+If you just want to have a look at the exaples, that's all you need to do. 
+If you want to run the examples for yourself with the CSP-Rules-V2.1 software (supposed to be already installed on your computer), possibly trying different selections of resolution rules, move the "CSP-Rules-Examples" folder into the "CSP-Rules" folder you have created when installing CSP-Rules-V2.1. (Notice: into the "CSP-Rules" folder, not into the CSP-Rules-V2.1 folder!) That way, you should be able to directly copy and paste the commands present in the some of the example files.
 
 
 <br><br>
-Sections 4 to 10 describe the contents of each application folder.
+Sections 4 to 10 describe the contents of each application folder. WORK IN PROGRESS.
 
 <br><br>
 ## 4. SudoRules and Sudoku examples<br>
 GENERAL WARNINGS AND REMINDERS:
 - apart from the Subset and the CLIPS examples, the Sudoku examples in this folder are much harder in the mean than random puzzles - which are much harder in the mean than puzzles proposed in newspapers or magazines.
-- more precisely, more than 99.9% of the Sudoku puzzles (taken randomly) are solvable by whips of length <= 7
-- more than 99.8% of the Sudoku puzzles (taken randomly) are solvable by typed-whips
+- more precisely, more than 99.9% of the Sudoku puzzles (taken randomly) are solvable by whips of length <= 7.
+- more than 99.8% of the Sudoku puzzles (taken randomly) are solvable by typed-whips.
 
 As a result, the examples in this folder will generally take more time and memory for finding a solution.
-More typical results can be obtained with the recently added examples in folder cbg-000.
+More typical results can be obtained with the controlled-bias examples in folder cbg-000.
 
 
 
@@ -61,27 +62,6 @@ To re-run these examples, activate only the following rules:
 
 
 
-<> The Oddagons folder gives six examples of Oddagons, only one of which is useful to lower the W rating, some of which merely disappear when whips are active. 
-Some exercises are left to the reader in the latter case: find if there is a combination of rules (not including whips) enough to solve the puzzle without destroying all the oddagons.
-"Usefulness" of an Oddagon is not related to its size: the only "useful" one has length 5.
-
-
-<> The Tridagons folder gives examples of Tridagons, a recently found exotic pattern.
-Two examples are from "mith". They are the first two examples of 9x9 puzzles that cannot be solved in T&E(2)
-They are not even solvable in gT&E(2) = T&E(W1, 2), nor in T&E(S2, 2)
-They are solvable in T&E(W2, 2) and therefore in T&E(3).
-The tridagon rule (also named "trivalue oddagons" or "Thor's Hammer") makes it much easier to solve them.
-
-The third example, also from mith, applies the newly defined Tridagon-Forcing-Whips in two-different ways: with function "solve" and with function "solve-w-preferenecs". In the example, giving Tridagons a preference over whips makes the solution simpler.
-
-
-
-<> Magictour-top1465 is  one of the most famous collections of puzzles that were, in the early 2000s, among the hardest known ones. As such, they are obviously exceptional and unlikely to be found in any newspaper or magasine. My selection here is a few of the hardest ones in this collection. Don' try to re-run them if you don't have at least 16GB of RAM or, for some of them, if you're in a hurry.
-Obviously, solutions with g-whips and braids will take more time and memory than solutions obtainable with whips.
-
-
-
-
 <> The CLIPS inference engine is delivered with a toy Sudoku solver and a few examples.
 The CLIPS-puzzles folder contains a subset of the "hardest" 9x9 Sudoku examples provided with CLIPS. Each example comes with both the CLIPS solution and the SudoRules solution.
 As puzzles, they are very easy and of no particular interest for Sudoku.
@@ -96,7 +76,29 @@ As a more serious comparison requires to compare harder puzzles than those provi
 
 
 
-<> The bg-000 folder contains the 21375 first series of puzzles in the controlled-bias collection (the full collection can be found here: https://github.com/denis-berthier/Controlled-bias_Sudoku_generator_and_collection).
+<> The Oddagons folder gives six examples of Oddagons, only one of which is useful to lower the W rating, some of which merely disappear when whips are active. 
+Some exercises are left to the reader in the latter case: find if there is a combination of rules (not including whips) enough to solve the puzzle without destroying all the oddagons.
+"Usefulness" of an Oddagon is not related to its size: the only "useful" one in the examples here has length 5.
+
+
+
+<> The Tridagons folder gives examples of Tridagons, a recently found exotic pattern.
+Two examples are from "mith". They are the first two examples of 9x9 puzzles that cannot be solved in T&E(2)
+They are not even solvable in gT&E(2) = T&E(W1, 2), nor in T&E(S2, 2)
+They are solvable in T&E(W2, 2) and therefore in T&E(3).
+The tridagon rule (also named "trivalue oddagons" or "Thor's Hammer") makes it much easier to solve them.
+The third example, also from mith, applies the newly defined Tridagon-Forcing-Whips in two-different ways: with function "solve" and with function "solve-w-preferenecs". In the example, giving Tridagons a preference over whips makes the solution simpler.
+
+
+
+<> Magictour-top1465 is  one of the most famous collections of puzzles that were, in the early 2000s, among the hardest known ones. As such, they are obviously exceptional and unlikely to be found in any newspaper or magasine. 
+My selection here is a few of the hardest ones in this collection. Don't try to re-run them if you don't have at least 16 GB of RAM or, for some of them, if you're in a hurry.
+Obviously, solutions with g-whips and braids will take more time and memory than solutions obtainable with whips.
+
+
+
+
+<> The cbg-000 folder contains the 21,375 first series of puzzles in the controlled-bias collection (the full collection can be found here: https://github.com/denis-berthier/Controlled-bias_Sudoku_generator_and_collection).
 It explains how to compute the various ratings (in file "launch.txt")
 It has the detailed results for all of these possible ratings based on CSP-Rules (plus their SER — Sudoku Explainer Rating).
 It has a detailed comparison of them (in file "comparisons.txt" or "comparisons.rtf"), showing that they differ only in rare cases. It is the most precise comparison ever made of the different CSP-Rules ratings (more precise than what I previously published in [PBCS]).
