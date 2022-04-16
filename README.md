@@ -253,6 +253,7 @@ https://mellowmelon.files.wordpress.com/2012/01/pack01slitherlinkv3.pdf<br>
 
 <br><br>
 ## 11. License<br>
-The software parts in CSP-Rules V2.1 are distributed under the GNU GPL v3.0 license (see the full text in the Docs folder).<br>
-Of course, the other publications (books, articles, conference proceedings...) remain protected by their original respective copyrights; this also applies to the CLIPS software.<br><br>
+Strictly speaking, there is little software parts in CSP-Rules-Examples. Whichever piece of software may be found here is distributed under the GNU GPL v3.0 license (see the full text in the Docs folder).<br>
+Puzzles remain the intellectual property of their creators.<br>
+Puzzle solutions are my intellectual property.<br><br>
 
