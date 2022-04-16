@@ -17,7 +17,8 @@ However, you can propose an example for inclusion:
 - if it provides a better illustration of a resolution rule than an existing one;<br>
 - if it has some interesting characteristics not shown in the other examples;<br>
 - if it provides a different solution for an existing example;<br>
-In any case, do not forget to describe the full configuration choices made in your example.<br>
+In any case, do not forget to describe the full configuration choices made in your example.<br><br>
+
 If your example involves solving with CSP-Rules-V2.1 a collection of puzzles in a .txt file or .csv file or in any other format, don't forget to write the full command you used to do this, always referring to files via the ?*CSP-Rules-Exampes* global variable of CSP-Rules-V2.1.<br>
 If your example requires some additional code to read or solve it, don't forget to include it.
 
