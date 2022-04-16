@@ -2,9 +2,9 @@
 # CONTRIBUTING TO CSP-RULES-EXAMPLES
 
 Any contribution to CSP-Rules-Examples is welcome.<br>
-There are several ways you can contribute to it, either at the general level or at the level of some of its applications.<br>
+There are several ways you can contribute to it.<br>
 The following are non restrictive suggestions, any other idea is welcome, but **the general rules of good conduct will be applied strictly: no PR that doesn't respect them will be taken into consideration**.<br>
-As a general background for these rules, you should always keep in mind that **the CSP-Rules user is not supposed to be a programmer, let alone an expert one**.<br><br>
+As a general background for these rules, you should always keep in mind that **the CSP-Rules user is not supposed to be a programmer, let alone an expert one**. The goal of the examples is either to illustrate some resolution rule(s) or to describe some general results. <br><br>
 
 ## General rules of "good conduct" 
 
@@ -12,10 +12,14 @@ As a general background for these rules, you should always keep in mind that **t
 
 
 ## Contributing to the Examples 
-Adding more examples is not a goal _per se_. However, if you find an example with some interesting characteristics not shown in the other examples, or an example that provides a better illustration of the existing rules, you can propose it for inclusion or as a replacement for an existing one.<br>
-Do not forget to describe the full configuration choices made in your example.<br>
-If your example involves solving a collection of puzzles in a .txt file or .csv file or in any other format, don't forget to write the full command you used to do this, always referring to files via the ?*CSP-Rules-Exampes* global variable of CSP-Rules-V2.1.<br>
-If your example requires some additional code to read or deal with the ewample, don't forget to include it.
+Adding more examples is not a goal _per se_. <br>
+However, you can propose an example for inclusion:
+- if it provides a better illustration of a resolution rule than an existing one;<br>
+- if it has some interesting characteristics not shown in the other examples;<br>
+- if it provides a different solution for an existing example;<br>
+In any case, do not forget to describe the full configuration choices made in your example.<br>
+If your example involves solving with CSP-Rules-V2.1 a collection of puzzles in a .txt file or .csv file or in any other format, don't forget to write the full command you used to do this, always referring to files via the ?*CSP-Rules-Exampes* global variable of CSP-Rules-V2.1.<br>
+If your example requires some additional code to read or solve it, don't forget to include it.
 
 
 <br><br>
