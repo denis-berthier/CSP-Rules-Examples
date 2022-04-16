@@ -1,6 +1,6 @@
 # CSP-Rules-Examples<br><br>
 
-## Examples for the CSP-Rules-V2.1 software</b><br><br>
+## Examples for the various logic puzzles included in the CSP-Rules-V2.1 software</b><br><br>
 
 
 
