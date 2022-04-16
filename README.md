@@ -25,7 +25,7 @@ The main reasons for turning it into an independent repository are:<br>
 <br><br>
 ## 3. Installation<br>
 Download CSP-Rules-Examples from the master branch (by clicking the "Code" button and then the "Download zip" option), unzip the resulting file, rename it to "CSP-Rules-Examples" (in particular, delete the possible "-master" part in its name.<br>
-If you just want to have a look at the exaples, that's all you need to do. 
+If you just want to have a look at the examples, that's all you need to do. 
 If you want to run the examples for yourself with the CSP-Rules-V2.1 software (supposed to be already installed on your computer), possibly trying different selections of resolution rules, move the "CSP-Rules-Examples" folder into the "CSP-Rules" folder you have created when installing CSP-Rules-V2.1. (Notice: into the "CSP-Rules" folder, not into the CSP-Rules-V2.1 folder!) That way, you should be able to directly copy and paste the commands present in the some of the example files.
 
 
