@@ -132,6 +132,10 @@ The lightning-8.2 puzzle is also an illustration of computing 2-step solutions. 
 
 
 
+<> The eleven-impossible-3-digit-patterns folder gives a complete analyses of eleven's list of 3-digit patterns, allowing to find that only one of them requires more than T&E(2) to be proven contradictory. After the trivalue oddagon pattern, this is the second such pattern.
+
+
+
 <> Metcalf-B7B is an example where T&E is used in order to determine the B?B classification. It's one of the 3 hardest known puzzles; it is in B7B.
 You can see that 89 hypotheses are tried (which is a relatively small number for T&E) and that only one phase is necessary (also rare for T&E: in general some candidates must be tried several times).
 To re-run this example, activate only the following rules:
