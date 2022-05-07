@@ -77,20 +77,6 @@ As a more serious comparison requires to compare harder puzzles than those provi
 
 
 
-<> The Oddagons folder gives six examples of Oddagons, only one of which is useful to lower the W rating, some of which merely disappear when whips are active. 
-Some exercises are left to the reader in the latter case: find if there is a combination of rules (not including whips) enough to solve the puzzle without destroying all the oddagons.
-"Usefulness" of an Oddagon is not related to its size: the only "useful" one in the examples here has length 5.
-
-
-
-<> The Tridagons folder gives examples of Tridagons, a recently found exotic pattern.
-Two examples are from "mith". They are the first two examples of 9x9 puzzles that cannot be solved in T&E(2)
-They are not even solvable in gT&E(2) = T&E(W1, 2), nor in T&E(S2, 2)
-They are solvable in T&E(W2, 2) and therefore in T&E(3).
-The tridagon rule (also named "trivalue oddagons" or "Thor's Hammer") makes it much easier to solve them.
-The third example, also from mith, applies the newly defined Tridagon-Forcing-Whips in two-different ways: with function "solve" and with function "solve-w-preferenecs". In the example, giving Tridagons a preference over whips makes the solution simpler.
-
-
 
 <> Magictour-top1465 is  one of the most famous collections of puzzles that were, in the early 2000s, among the hardest known ones. As such, they are obviously exceptional and unlikely to be found in any newspaper or magasine. 
 My selection here is a few of the hardest ones in this collection. Don't try to re-run them if you don't have at least 16 GB of RAM or, for some of them, if you're in a hurry.
@@ -130,6 +116,21 @@ The lightning-8.2 puzzle is also an illustration of computing 2-step solutions. 
 
 <> The Fewer-steps folder includes the two examples of how to reduce the number of steps in a resolution path (as described in section 6.19 of the Basic User Manual): one using mainly chain rules (the pisces2#523-9.0-W7.clp puzzle) and one using mainly Subset rules (the "Tatooine-Tosche-Station.clp" puzzle).
 
+
+
+
+<> The Oddagons folder gives six examples of Oddagons, only one of which is useful to lower the W rating, some of which merely disappear when whips are active. 
+Some exercises are left to the reader in the latter case: find if there is a combination of rules (not including whips) enough to solve the puzzle without destroying all the oddagons.
+"Usefulness" of an Oddagon is not related to its size: the only "useful" one in the examples here has length 5.
+
+
+<> The Tridagons folder gives examples of Tridagons, a recently found exotic pattern.
+Two examples are from "mith". They are the first two examples of 9x9 puzzles that I found not to be to be solvable in T&E(2).
+They are not even solvable in gT&E(2) = T&E(W1, 2), nor in T&E(S2, 2).
+They are solvable in T&E(W2, 2) and therefore in T&E(3).
+The tridagon rule (based on a contradictory pattern known as "trivalue oddagon" or "Thor's Hammer") makes it much easier to solve them.
+The third example, also from mith, applies the newly defined Tridagon-Forcing-Whips in two-different ways: with function "solve" and with function "solve-w-preferences". In the example, giving Tridagons a preference over whips makes the solution simpler.<br>
+Finally, several automated proofs that the trivalue oddagon pattern is contraidctory are given. This illustrates how CSP-Rukescan be used as an assistant theorem prover (as was already shown in the Slitherlink case).
 
 
 <> The eleven-impossible-3-digit-patterns folder gives a complete analysis of eleven's list of 3-digit patterns, allowing to find that only one of them requires more than T&E(2) to be proven contradictory. After the trivalue oddagon pattern, this is the second such pattern.
