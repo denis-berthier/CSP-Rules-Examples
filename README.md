@@ -132,7 +132,7 @@ The lightning-8.2 puzzle is also an illustration of computing 2-step solutions. 
 
 
 
-<> The eleven-impossible-3-digit-patterns folder gives a complete analyses of eleven's list of 3-digit patterns, allowing to find that only one of them requires more than T&E(2) to be proven contradictory. After the trivalue oddagon pattern, this is the second such pattern.
+<> The eleven-impossible-3-digit-patterns folder gives a complete analysis of eleven's list of 3-digit patterns, allowing to find that only one of them requires more than T&E(2) to be proven contradictory. After the trivalue oddagon pattern, this is the second such pattern.
 
 
 
