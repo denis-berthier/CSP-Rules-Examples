@@ -18,7 +18,7 @@ Differences between ratings > 1 are marked with symbol " <<<<<<<<"
 Differences between ratings > 2 are marked with symbol " <<<<<<<< <<<<<<<<"
 
 
-Function used for comparison:
+Function used:
 (deffunction compare(?r1 ?r2 ?file1 ?file2 ?nb)
 	;;; ?r1 and ?r2 are the two ratings, e.g. W and B
 	;;; ?file1 ?file2 are the full paths to the ratings files
@@ -29,12 +29,7 @@ Function used for comparison:
 	(while (<= ?i ?nb) 
 		(bind ?rating1 (read-number "file1"))
 		(bind ?rating2 (read-number "file2") )
-		(if (neq ?rating1 ?rating2) then (printout t "#" ?i "; " ?r1 ?rating1 "; " ?r2 ?rating2)
-			(if (> (- ?rating2 ?rating1) 1) then (printout t  <<<<<<<<))
-			(if (> (- ?rating2 ?rating1) 2) then (printout t  <<<<<<<<))
-			(printout t crlf)
-		)
-
+		(if (neq ?rating1 ?rating2) then (printout t "#" ?i "; " ?r1 ?rating1 "; " ?r2 ?rating2 crlf))
 		(bind ?i (+ ?i 1))
 	)
 	(close "file2")
@@ -51,7 +46,7 @@ Function used for comparison:
 ----------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------
 
-W vs B: 
+W vs B: diff W-ratings-000.txt B-ratings-000.txt (in only 21375)
 
 Note that one must always have W ≥ B
 In reality, there are only 65 differences, i.e. a proportion of 0,30% differences.
@@ -133,7 +128,7 @@ And there are only 4 cases with difference > 1 (0,019%) and none with difference
 ----------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------
 
-W vs gW: 
+W vs gW: diff W-ratings-000.txt gW-ratings-000.txt
 
 Note that one must always have W ≥ gW
 In reality, there are only 48 differences, i.e. a proportion of 0,22% differences.
@@ -196,10 +191,10 @@ And there are only 5 cases with difference > 1 (0,023%) and only one with differ
 ----------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------
 
-W vs FW: 
+W vs FW: diff W-ratings-000.txt FW-ratings-000.txt
 
 Note that one must always have W ≥ FW
-In reality, there are only 7 differences, i.e. a proportion of 0,03% differences.
+In reality, there are only 8 differences, i.e. a proportion of 0,037% differences.
 And there is only 1 case with difference 2 (0,005%) and no case with difference > 2.
 
 #8346; W6; FW5
@@ -208,22 +203,24 @@ And there is only 1 case with difference 2 (0,005%) and no case with difference 
 #9595; W6; FW5
 #10188; W5; FW4
 #13514; W5; FW4
+#16579; W8; FW7
 #16630; W7; FW5
 
 
 
 
+
 ----------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------
 
-FW vs F3W: 
+FW (or F2W) vs F3W: diff FW-ratings-000.txt F3W-ratings-000.txt
 
 F3W computed by using the 3-value relation and the OR3-Forcing-Whips
 (plus, of course, the 2-value relation and the OR2-Forcing-Whips)
 
 Note that one must always have FW ≥ F3W
-In reality, there are only 31 differences, i.e. a proportion of 0.15 % differences.
+In reality, there are only 30 differences, i.e. a proportion of 0.14 % differences.
 And there are only 2 cases with difference ≥ 2 (0,009 %) and 1 case (0,005 %) with difference > 2 .
 
 
@@ -250,7 +247,6 @@ And there are only 2 cases with difference ≥ 2 (0,009 %) and 1 case (0,005 %) 
 #14090; FW5; F3W4
 #14800; FW5; F3W4
 #16325; FW6; F3W5
-#16579; FW8; F3W7
 #16845; FW12; F3W11
 #17106; FW6; F3W5
 #17598; FW6; F3W5
@@ -259,6 +255,73 @@ And there are only 2 cases with difference ≥ 2 (0,009 %) and 1 case (0,005 %) 
 #18723; FW6; F3W5
 #20528; FW6; F3W5
 
+
+
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
+B vs F3W: diff B-ratings-000.txt F3W-ratings-000.txt
+
+F3W computed by using the 3-value relation and the OR3-Forcing-Whips
+(plus, of course, the 2-value relation and the OR2-Forcing-Whips)
+
+Note that there's no a priori relation between B and F3W
+In reality, there are only 52 differences, i.e. a proportion of 0,24 % differences.
+
+
+#9; B4; F3W5
+#41; B5; F3W4
+#109; B7; F3W9
+#990; B5; F3W6
+#2412; B5; F3W7
+#2862; B6; F3W3
+#3551; B7; F3W8
+#3988; B4; F3W5
+#4041; B5; F3W6
+#4918; B9; F3W10
+#5796; B6; F3W7
+#5931; B6; F3W5
+#6009; B6; F3W5
+#6419; B5; F3W6
+#6926; B7; F3W8
+#7656; B6; F3W7
+#8313; B5; F3W6
+#8340; B6; F3W7
+#8346; B6; F3W5
+#8981; B4; F3W3
+#9117; B6; F3W7
+#9152; B4; F3W5
+#9595; B6; F3W5
+#9663; B8; F3W9
+#10086; B6; F3W7
+#10188; B5; F3W4
+#10296; B6; F3W7
+#10580; B6; F3W7
+#11437; B5; F3W6
+#11521; B5; F3W6
+#13514; B5; F3W4
+#13841; B7; F3W8
+#14180; B6; F3W7
+#14434; B6; F3W7
+#14638; B7; F3W8
+#14800; B5; F3W4
+#15001; B5; F3W6
+#15672; B7; F3W8
+#15873; B5; F3W6
+#16155; B7; F3W8
+#16410; B6; F3W7
+#16630; B7; F3W5
+#16845; B10; F3W11
+#17018; B4; F3W5
+#17529; B4; F3W5
+#18168; B6; F3W5
+#18494; B9; F3W10
+#19600; B5; F3W6
+#19909; B7; F3W8
+#20108; B7; F3W8
+#21053; B5; F3W6
+#21158; B6; F3W7
 
 
 
@@ -271,7 +334,7 @@ And there are only 2 cases with difference ≥ 2 (0,009 %) and 1 case (0,005 %) 
 ----------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------
 
-W vs S+W: 
+W vs S+W: diff W-ratings-000.txt S+W-ratings-000.txt
 
 Note that one must always have W ≥ S+W
 In reality, there are only 18 differences, i.e. a proportion of 0,084% differences
@@ -303,7 +366,7 @@ And there are only 2 cases with difference >1 (0,009%) and only one with differe
 ----------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------
 
-gW vs S+gW: 
+gW vs S+gW: diff gW-ratings-000.txt S+gW-ratings-000.txt
 
 Note that one must always have gW ≥ S+gW
 In reality, there are only 16 differences, i.e. a proportion of 0,075% differences
@@ -336,7 +399,7 @@ For all these differences (i.e. not including the above 2), W = gW. The 'W vs gW
 ----------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------
 
-S+W vs gW: 
+S+W vs gW: diff S+W-ratings-000.txt gW-ratings-000.txt
 
 Note that there  is no a priori relation between S+W and gW.
 In reality, there are only 62 differences, i.e. a proportion of 0,29% differences.
@@ -413,7 +476,7 @@ And there are only 6 cases with difference > 1 (0,028%) and only 2 with differen
 ----------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------
 
-S+W vs S+gW: 
+S+W vs S+gW: diff S+W-ratings-000.txt S+gW-ratings-000.txt
 
 Note that one must always have S+W ≥ S+gW
 In reality, there are only 47 differences, i.e. a proportion of 0,22% differences
@@ -474,7 +537,7 @@ And there are only 4 cases with difference > 1 (0,019%) and no case with differe
 ----------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------
 
-W vs S+gW: 
+W vs S+gW: diff W-ratings-000.txt S+gW-ratings-000.txt
 
 Note that one must always have W ≥ S+gW
 In reality, there are only 62 differences, i.e. a proportion of 0,29% differences.
@@ -564,13 +627,13 @@ There are only 6 cases with difference > 1 (0,028%) and none with difference > 2
 ----------------------------------------------------------------------------------------------------------------
 
 
-S+W vs SFin+W: 
+S+W vs SFin+W: diff S+W-ratings-000.txt SFin+W-ratings-000.txt
 Note that one must always have S+W ≥ SFin+W
 In reality, there are no differences.
 
 
 
-S+gW vs SFin+gW: 
+S+gW vs SFin+gW: diff S+gW-ratings-000.txt SFin+gW-ratings-000.txt
 Note that one must always have S+gW ≥ SFin+gW
 In reality, there are no differences.
 
@@ -588,9 +651,12 @@ In reality, there are no differences.
 
 Here, exotic pattern means sk-loop, J-Exocet or oddagon
 
-W vs Exo+W: 
+W vs Exo+W: diff W-ratings-000.txt Exo+W-ratings-000.txt
 Note that one must always have W ≥ Exo+W
 In reality, there are no differences.
+
+
+No difference upto # 11642
 
 
 
@@ -605,12 +671,99 @@ In reality, there are no differences.
 
 Here, Uniqueness means UR1, UR2, UR2b, UR3, UR4 and BUG+1
 Notice that, due to non-confluence of the rules for Uniqueness, they have to be applied as soon as  they are available. 
-Nevertheless, their rating doesn't have to be 0. 
-For URs, it is naturally 4 (because they rely on 4 CSP-Variables).
-For BUG+1, it's more arbitrary, as it can rely on any number of bivalue cells, but we shall consider it uses at least 5 cells (a clear under-rating). In all the cases in this file, it is applied after W4 and it appears in the U+W ratings file as 4+BUG.
+Nevertheless, their rating doesn't have to be 0. For URs, it is naturally 4 (because they rely on 4 CSP-Variables).
+For BUG+1, it's more arbitrary, as it can rely on any number of bivalue cells, but we consider it uses at least 4 cells. In all the cases in this file, it is applied after W4 and it appears in the U+W ratings file as 4+BUG.
+
+W vs U+W: 
+Note that one must always have W ≥ U+W
+In reality, there are only 58 differences, i.e. a proportion of 0,27% differences.
+There are only 17 cases with difference > 1 (0,079%) and 7 cases with difference > 2  (0,033%).
+
 
 
 Function used:
+(deffunction compareU(?file1 ?file2 ?nb)
+	;;; ?r1 and ?r2 are the two ratings, e.g. W and B
+	;;; ?file1 ?file2 are the full paths to the ratings files
+	;;; ?nb is the length of the ratings files (here 21375)
+	(open ?file1 "file1" "r")
+	(open ?file2 "file2" "r")
+	(bind ?i 1)
+	(while (<= ?i ?nb) 
+		(bind ?rating1 (read-number "file1"))
+		(bind ?rating2 (read-number "file2") )
+		(if 	(and (> ?rating1 4) 
+				(or (not (numberp ?rating2)) (neq ?rating1 ?rating2))
+			)
+			then (printout t "#" ?i "; W" ?rating1 "; U+W" ?rating2 crlf)
+		)
+		(bind ?i (+ ?i 1))
+	)
+	(close "file2")
+	(close "file1")
+)
+#1173; W5; U+W3 <<<<<<<<
+#1380; W5; U+W3 <<<<<<<<
+#1399; W5; U+W3 <<<<<<<<
+#2305; W5; U+W3 <<<<<<<<
+#3454; W5; U+W4
+#3574; W5; U+W4
+#3725; W5; U+W4
+#3772; W5; U+W4
+#4409; W5; U+W4
+#4918; W10; U+W4 <<<<<<<< <<<<<<<<
+#5045; W5; U+W3 <<<<<<<<
+#5189; W6; U+W5
+#5441; W5; U+W2 <<<<<<<< <<<<<<<<
+#5463; W5; U+W4
+#5733; W5; U+W2 <<<<<<<< <<<<<<<<
+#6085; W5; U+W3 <<<<<<<<
+#6206; W5; U+W3 <<<<<<<<
+#6427; W7; U+W3 <<<<<<<< <<<<<<<<
+#6506; W5; U+W4
+#7035; W6; U+W5
+#7473; W5; U+W4
+#7545; W5; U+W4
+#7800; W5; U+W4
+#8146; W5; U+W4
+#9113; W5; U+W4
+#9965; W5; U+W4
+#10193; W5; U+W4
+#10272; W5; U+W4
+#10720; W6; U+W4 <<<<<<<<
+#10971; W6; U+W5
+#11069; W5; U+W1 <<<<<<<< <<<<<<<<
+#11244; W5; U+W4
+#12583; W5; U+W4
+#12712; W5; U+W3 <<<<<<<<
+#13651; W5; U+W*** READ ERROR *** (i.e. 4+BUG)
+#13798; W5; U+W4
+#13873; W5; U+W4
+#14568; W5; U+W4
+#14696; W5; U+W3
+#15205; W5; U+W4
+#15613; W5; U+W4
+#16004; W6; U+W5
+#16335; W5; U+W3 <<<<<<<<
+#17001; W5; U+W1 <<<<<<<< <<<<<<<<
+#17669; W5; U+W4
+#18012; W5; U+W4
+#18066; W5; U+W4
+#18407; W5; U+W4
+#18740; W6; U+W5
+#19174; W5; U+W2 <<<<<<<< <<<<<<<<
+#19291; W5; U+W4
+#19515; W5; U+W4
+#19615; W5; U+W4
+#20166; W5; U+W4
+#20537; W5; U+W4
+#20568; W5; U+W4
+#20953; W5; U+W4
+#20955; W5; U+W3
+#21191; W5; U+W4
+
+
+Notice that this number is drastically reduced if we consider BUG+1 uses at least 5 cells
 (deffunction compareU(?file1 ?file2 ?nb)
 	;;; ?r1 and ?r2 are the two ratings,  here. W and U+W
 	;;; ?file1 ?file2 are the full paths to the ratings files
@@ -632,9 +785,7 @@ Function used:
 	(close "file1")
 )
 
-W vs U+W: 
-Note that one must always have W ≥ U+W
-In  reality, there are only 8 differences, i.e. a proportion of 0,27% differences.
+Now, there are only 8 differences, i.e. a proportion of 0,27% differences.
 There are only 3 cases with difference > 1 (0,014%) and 2 cases with difference > 2  (0,0094%).
 
 #4918; W10; U+W4 <<<<<<<< <<<<<<<<
@@ -666,6 +817,18 @@ There are only 3 cases with difference > 1 (0,014%) and 2 cases with difference 
  (bind ?*print-RS-after-whips[1]* FALSE)
  (bind ?*print-final-RS* FALSE)
  (bind ?*Typed-Whips* TRUE)
+
+
+
+(stats-n-grids-after-first-p-from-text-file 
+	(str-cat ?*CSP-Rules-current-version* ?*Directory-symbol* "Examples/Sudoku/cbg-000/" "puzzles-000.txt")
+	0 
+	21375 
+	(str-cat ?*CSP-Rules-current-version* ?*Directory-symbol* "Examples/Sudoku/cbg-000/" "TyW-ratings-000.txt")
+	(str-cat ?*CSP-Rules-current-version* ?*Directory-symbol* "Examples/Sudoku/cbg-000/" "TyW-times-000.txt") 
+	(str-cat ?*CSP-Rules-current-version* ?*Directory-symbol* "Examples/Sudoku/cbg-000/" "TyW-nb-facts-000.txt")
+)
+
 
 
 Function used for comparison:
@@ -719,6 +882,7 @@ Function used for comparison:
 21375
 )
 
+29 have TyW = 36 ie not solvable by Typed-Whips.
 
 nb-diff = 5950
 nb-diff>1 = 2248
@@ -735,5 +899,46 @@ The 3 puzzles with diff > 15:
 #10373; W5; TyW21;  diff = 16 ; .2........5.189.3.6....34......94.....8..569.........836.....5..91.7..4.........1
 #14800; W5; TyW29;  diff = 24 ; ...4.6.8..5.....3..9....14...9.7.......2..8..7....3.625.........34..5.7..7.8.1...
 The latter also happens to have gW<W (gW=4) and to be the largest TyW rating in the collection (see file "#14800-W5-TyW29.clp" for details)
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+6) COMPARISONS INVOLVING TYPED WHIPS
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
+;;; to compute the stats for the TyW-rating:
+
+ (bind ?*print-actions* FALSE)
+ (bind ?*print-levels* FALSE)
+ (bind ?*print-solution* FALSE)
+ (bind ?*print-RS-after-Singles* FALSE) ; do not print the resolution state after BRT
+ (bind ?*print-RS-after-whips[1]* FALSE)
+ (bind ?*print-final-RS* FALSE)
+ (bind ?*Typed-Whips* TRUE)
+
+
+
+(stats-n-grids-after-first-p-from-text-file 
+	(str-cat ?*CSP-Rules-current-version* ?*Directory-symbol* "Examples/Sudoku/cbg-000/" "puzzles-000.txt")
+	0 
+	21375 
+	(str-cat ?*CSP-Rules-current-version* ?*Directory-symbol* "Examples/Sudoku/cbg-000/" "TyW-rc-ratings-000.txt")
+	(str-cat ?*CSP-Rules-current-version* ?*Directory-symbol* "Examples/Sudoku/cbg-000/" "TyW-rc-times-000.txt") 
+	(str-cat ?*CSP-Rules-current-version* ?*Directory-symbol* "Examples/Sudoku/cbg-000/" "TyW-rc-nb-facts-000.txt")
+)
+
+(compare W W-rc 
+	(str-cat ?*CSP-Rules-current-version* ?*Directory-symbol* "Examples/Sudoku/cbg-000/" "W-ratings-000.txt")
+	(str-cat ?*CSP-Rules-current-version* ?*Directory-symbol* "Examples/Sudoku/cbg-000/" "TyW-rc-ratings-000.txt")
+
+21375
+)
+
 
 
