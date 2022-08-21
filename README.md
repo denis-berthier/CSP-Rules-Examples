@@ -26,7 +26,7 @@ The main reasons for turning it into an independent repository are:<br>
 ## 3. Installation<br>
 Download CSP-Rules-Examples from the master branch (by clicking the "Code" button and then the "Download zip" option), unzip the resulting file, rename it to "CSP-Rules-Examples" (in particular, delete the possible "-master" part in its name.<br>
 If you just want to have a look at the examples, that's all you need to do.<br>
-If you want to run the examples for yourself with the CSP-Rules-V2.1 software (supposed to be already installed on your computer), possibly trying different selections of resolution rules, move the "CSP-Rules-Examples" folder into the "CSP-Rules" folder you have created when installing CSP-Rules-V2.1. (Notice: into the "CSP-Rules" folder, not into the CSP-Rules-V2.1 folder!) That way, you should be able to directly copy and paste the commands present in the some of the example files.
+If you want to run the examples for yourself with the CSP-Rules-V2.1 software (supposed to be already installed on your computer), possibly trying different selections of resolution rules, move the "CSP-Rules-Examples" folder into the "CSP-Rules" folder you have created when installing CSP-Rules-V2.1. (Notice: into the "CSP-Rules" folder, not into the CSP-Rules-V2.1 sub-folder!) That way, you should be able to directly copy and paste the commands present in some of the example files and to reproduce the results.
 
 
 <br><br>
@@ -124,13 +124,15 @@ Some exercises are left to the reader in the latter case: find if there is a com
 "Usefulness" of an Oddagon is not related to its size: the only "useful" one in the examples here has length 5.
 
 
-<> The Tridagons folder gives examples of Tridagons, a recently found exotic pattern.
-Two examples are from "mith". They are the first two examples of 9x9 puzzles that I found not to be to be solvable in T&E(2).
-They are not even solvable in gT&E(2) = T&E(W1, 2), nor in T&E(S2, 2).
-They are solvable in T&E(W2, 2) and therefore in T&E(3).
-The tridagon rule (based on a contradictory pattern known as "trivalue oddagon" or "Thor's Hammer") makes it much easier to solve them.
-The third example, also from mith, applies the newly defined Tridagon-Forcing-Whips in two-different ways: with function "solve" and with function "solve-w-preferences". In the example, giving Tridagons a preference over whips makes the solution simpler.<br>
-Finally, several automated proofs that the trivalue oddagon pattern is contraidctory are given. This illustrates how CSP-Rukescan be used as an assistant theorem prover (as was already shown in the Slitherlink case).
+<> The Tridagons folder gives examples of Tridagons (a recently found exotic pattern) and of related patterns, in particular of ORk-Forcing-Whips based on them. Puzzles here are in T&E(3), but they can be solved relatively easily thanks to this exotic pattern.<br>
+All the exaples here are due to Mith.<br>
+Two examples (Loki and variant) are the first two 9x9 puzzles that I found were not solvable in T&E(2).
+They are not even solvable in gT&E(2) = T&E(W1, 2), nor in T&E(S2, 2).<br>
+They are solvable in T&E(W2, 2) and therefore in T&E(3).<br>
+The tridagon rule (based on a contradictory pattern known as "trivalue oddagon" or "Thor's Hammer") makes it much easier to solve them.<br>
+A third example (972#8), also from mith, applies Tridagon-Forcing-Whips in two-different ways: with function "solve" and with function "solve-w-preferences". In the example, giving Tridagons a preference over whips makes the solution simpler.<br>
+Another series of 13 examples, with names containing ORiFWj (i,j=2,3,....) proposes solutions with ORk-Forcing-Whips based on anti-tridagons. One more example (#1182-many-guardians-W6+OR5FW9)deals with anti-tridagons with a large number of guardians. Try to play in a similar way with the other examples in order to find simpler solutions than those proposed here (which have all been looked for in W8+OR5FW8)<br>
+Finally, several automated proofs that the trivalue oddagon pattern is contradictory are given. This illustrates how CSP-Rules can be used as an assistant theorem prover (as was already shown in the Slitherlink case).
 
 
 <> The eleven-impossible-3-digit-patterns folder gives a complete analysis of eleven's list of 3-digit patterns, allowing to find that only one of them requires more than T&E(2) to be proven contradictory. After the trivalue oddagon pattern, this is the second such pattern.
