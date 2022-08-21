@@ -16,7 +16,7 @@
 
 ........1.....2.......3..45..6.......71.8....32..67..8.6..23....837..1..7.281.6..
 
-The is the second puzzle not solvable in T&5(2)
+The is the second puzzle not solvable in T&E(2)
 Not even solvable in gT&E(2) = T&E(W1, 2), nor in T&E(S2, 2)
 Solvable in T&E(W2, 2) and therefore in T&E(3)
 
@@ -25,9 +25,9 @@ It is close to Loki, but not isomorphic to it.
 
 (solve "........1.....2.......3..45..6.......71.8....32..67..8.6..23....837..1..7.281.6..")
 ***********************************************************************************************
-***  SudoRules 20.1.s based on CSP-Rules 2.1.s, config = W+O+SFin
-***  Using CLIPS 6.32-r815
-***  Running on MacBookPro Retina Mid-2012 i7 2.7GHz, 16GB 1600MHz DDR3, MacOS 10.15.7
+***  SudoRules 20.1.s based on CSP-Rules 2.1.s, config = W+SFin+TridFW
+***  Using CLIPS 6.32-r823
+***  Running on MacBookPro 16'' M1Max 2021 3.2GHz, 64GB LPDDR5, MacOS 12.5
 ***  Download from: https://github.com/denis-berthier/CSP-Rules-V2.1
 ***********************************************************************************************
 ........1.....2.......3..45..6.......71.8....32..67..8.6..23....837..1..7.281.6..
@@ -70,11 +70,25 @@ Resolution state after Singles and whips[1]:
 205 candidates.
 
 hidden-pairs-in-a-column: c4{n2 n3}{r4 r5} ==> r5c4≠9, r5c4≠5, r5c4≠4, r4c4≠9, r4c4≠5, r4c4≠4, r4c4≠1
-tridagon for digits 4, 5 and 9 in blocks:
-        b5, cells: r6c4 (target cell), r5c6, r4c5
-        b4, cells: r6c3, r5c1, r4c2
-        b8, cells: r7c4, r9c6, r8c5
-        b7, cells: r7c3, r9c2, r8c1
+   +----------------------+----------------------+----------------------+
+   ! 24569  3459   45789  ! 4569   4579   4589   ! 23789  236789 1      !
+   ! 4569   13459  45789  ! 14569  4579   2      ! 3789   36789  3679   !
+   ! 269    19     789    ! 169    3      189    ! 2789   4      5      !
+   +----------------------+----------------------+----------------------+
+   ! 8      459    6      ! 23     459    1459   ! 234579 123579 23479  !
+   ! 459    7      1      ! 23     8      459    ! 23459  23569  23469  !
+   ! 3      2      459    ! 1459   6      7      ! 459    159    8      !
+   +----------------------+----------------------+----------------------+
+   ! 1      6      459    ! 459    2      3      ! 45789  5789   479    !
+   ! 459    8      3      ! 7      459    6      ! 1      259    249    !
+   ! 7      459    2      ! 8      1      459    ! 6      359    349    !
+   +----------------------+----------------------+----------------------+
+
+tridagon type diag for digits 4, 5 and 9 in blocks:
+        b5, with cells: r6c4 (target cell), r4c5, r5c6
+        b4, with cells: r6c3, r4c2, r5c1
+        b8, with cells: r7c4, r8c5, r9c6
+        b7, with cells: r7c3, r8c1, r9c2
  ==> r6c4≠4,5,9
 naked-single ==> r6c4=1
 hidden-single-in-a-block ==> r3c6=1
@@ -149,24 +163,28 @@ naked-single ==> r5c4=2
 naked-single ==> r5c9=6
 naked-single ==> r7c8=8
 naked-single ==> r9c2=5
-PUZZLE 0 IS SOLVED. rating-type = W+O+SFin, MOST COMPLEX RULE TRIED = tridagon
-   534978261
-   618542973
-   297631845
-   846395712
-   971284356
-   325167498
-   169423587
-   483756129
-   752819634
+PUZZLE 0 IS SOLVED. rating-type = W+SFin+TridFW, MOST COMPLEX RULE TRIED = tridagon[12]
+     +-------+-------+-------+
+     ! 5 3 4 ! 9 7 8 ! 2 6 1 !
+     ! 6 1 8 ! 5 4 2 ! 9 7 3 !
+     ! 2 9 7 ! 6 3 1 ! 8 4 5 !
+     +-------+-------+-------+
+     ! 8 4 6 ! 3 9 5 ! 7 1 2 !
+     ! 9 7 1 ! 2 8 4 ! 3 5 6 !
+     ! 3 2 5 ! 1 6 7 ! 4 9 8 !
+     +-------+-------+-------+
+     ! 1 6 9 ! 4 2 3 ! 5 8 7 !
+     ! 4 8 3 ! 7 5 6 ! 1 2 9 !
+     ! 7 5 2 ! 8 1 9 ! 6 3 4 !
+     +-------+-------+-------+
 
-nb-facts = <Fact-50776>
+nb-facts = <Fact-23790>
 Puzzle ........1.....2.......3..45..6.......71.8....32..67..8.6..23....837..1..7.281.6.. :
-init-time = 0.2s, solve-time = 14.31s, total-time = 14.5s
+init-time = 0.07s, solve-time = 3.46s, total-time = 3.53s
 ***********************************************************************************************
-***  SudoRules 20.1.s based on CSP-Rules 2.1.s, config = W+O+SFin
-***  Using CLIPS 6.32-r815
-***  Running on MacBookPro Retina Mid-2012 i7 2.7GHz, 16GB 1600MHz DDR3, MacOS 10.15.7
+***  SudoRules 20.1.s based on CSP-Rules 2.1.s, config = W+SFin+TridFW
+***  Using CLIPS 6.32-r823
+***  Running on MacBookPro 16'' M1Max 2021 3.2GHz, 64GB LPDDR5, MacOS 12.5
 ***  Download from: https://github.com/denis-berthier/CSP-Rules-V2.1
 ***********************************************************************************************
 

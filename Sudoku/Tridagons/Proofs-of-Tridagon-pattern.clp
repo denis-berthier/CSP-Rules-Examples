@@ -1,13 +1,13 @@
 
 
 
-The trivalue oddagon impossible pattern cannot be proven in T&E(2).
+The trivalue oddagon impossible pattern cannot be proven to be contradictory in T&E(2).
 Can it be proven in T&E(3)???? YESSSSS
 
 
 
 in T&E(3):
-The version using standard T1E is too long
+The version using standard T&E is too long
 (solve-sukaku-grid
 +-------------------------------+-------------------------------+-------------------------------+
 ! 123       456789    456789    ! 123       123456789 123456789 ! 123456789 123456789 123456789 !
@@ -25,8 +25,9 @@ The version using standard T1E is too long
 )
 
 
-It is much better to use this short version of T&E:
+It is much better (though not  granted to reach the desired result) to use this focused version of T&E:
 (solve-k-digit-pattern-string 3 "100100000010010000001001000100001000010010000001100000000000000000000000000000000")
+
 ***********************************************************************************************
 ***  SudoRules 20.1.s based on CSP-Rules 2.1.s, config = T&E(BRT, 3)
 ***  Using CLIPS 6.32-r815
