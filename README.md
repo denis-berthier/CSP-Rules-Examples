@@ -84,7 +84,7 @@ As a more serious comparison requires to compare harder puzzles than those provi
 
 
 ### The cbg-000 folder 
-It contains the 21,375 first series of puzzles in the controlled-bias collection (the full collection can be found here: [https://github.com/denis-berthier/Controlled-bias_Sudoku_generator_and_collection](url)).<br>
+It contains the 21,375 first series of puzzles in the controlled-bias collection (the full collection can be found here: https://github.com/denis-berthier/Controlled-bias_Sudoku_generator_and_collection).<br>
 It explains how to compute their various ratings (in file "launch.txt").<br>
 It contains the detailed results for all of these possible ratings, based on CSP-Rules (plus their SER — Sudoku Explainer Rating).<br>
 It has a detailed comparison of them (in file "comparisons.txt" or "comparisons.rtf"), showing that they differ only in rare cases. It is the most precise comparison ever made of the different CSP-Rules ratings (more precise than what I previously published in [PBCS]).
@@ -189,7 +189,7 @@ is a small set of still larger grids. Don't forget to change grid-size in the co
 
 <br><br>
 ## 5. LatinRules and LatinSquares examples<br>
-All the classical Latin Square examples come from [http://forum.enjoysudoku.com/latin-squares-and-latin-square-puzzles-t36895.html](url), where more examples can be found.<br>
+All the classical Latin Square examples come from http://forum.enjoysudoku.com/latin-squares-and-latin-square-puzzles-t36895.html, where more examples can be found.<br>
 I've chosen the first four because they have large Subsets (size 3 or 4) and the last two because they are very difficult.<br>
 See also the examples for the Pandiagonal variant, chosen because they have "diagonal" Subsets.
 
@@ -204,18 +204,18 @@ I consider only two sources of Futoshiki puzzles:
 In both sets, you'll find examples with various kinds of Subsets. 
 
 The original sources have a much larger diversity of puzzles. Check them for yourself:
-[https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/unequal.html](url)
-[http://www.atksolutions.com/games/futoshiki.html](url)
+https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/unequal.html
+http://www.atksolutions.com/games/futoshiki.html
 
 
 <br><br>
 ## 7. KakuRules and Kakuro examples
-The best Kakuro puzzles I've found are on the ATK website: [http://www.atksolutions.com/games/kakuro.html](url)<br>
+The best Kakuro puzzles I've found are on the ATK website: http://www.atksolutions.com/games/kakuro.html<br>
 They have three levels: easy, medium, hard. The presentation is very clear.
 Here, I give only hard examples.
 Compared to other CSP-Rules applications, KakuRules is very fast, even on large (14x14) puzzles.
 
-Check the Kakuro-online website for relatively easy puzzles: [http://www.kakuro-online.com/generator.php](url)
+Check the Kakuro-online website for relatively easy puzzles: http://www.kakuro-online.com/generator.php)
 
 
 You can also try the Mepham puzzles, but the graphics are hard to read  (if you still have Flash working on your computer).
@@ -234,7 +234,7 @@ Numbrix puzzles from Puzzlesandbrains are generally slightly harder.
 
 <br><br>
 ## 9. MapRules and Map colouring examples
-The only source I'm aware of for Map Colouring problems (considered as puzzles) is Tatham: [https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/map.html](url)
+The only source I'm aware of for Map Colouring problems (considered as puzzles) is Tatham: https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/map.html
 
 I give a few "Hard" (H) and "Unreasonable" (U) examples, showing that they can be solved in a very short time by moderately long whips.
 
@@ -280,10 +280,10 @@ To manual players: don't miss the non-standard puzzles (with additional constrai
 
 
 **All the examples here are given for illustrative purposes only.** Go to the original websites for many more examples, with more varied difficulty levels:<br>
-[https://www.puzzle-loop.com](url)<br>
-[http://www.kakuro-online.com/slitherlink/](url)<br>
-[https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/loopy.html](url)<br>
-[https://mellowmelon.files.wordpress.com/2012/01/pack01slitherlinkv3.pdf](url)<br>
+https://www.puzzle-loop.com<br>
+http://www.kakuro-online.com/slitherlink/<br>
+https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/loopy.html<br>
+https://mellowmelon.files.wordpress.com/2012/01/pack01slitherlinkv3.pdf<br>
 
 
 <br><br>
