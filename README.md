@@ -11,7 +11,7 @@ A _finite binary Constraint Satisfaction Problems_ (CSP) is defined by a finite 
 **_CSP-Rules is a general pattern-based (or rule-based) solver of finite binary CSPs_**. <br>
 
 It includes a Latin Squares solver, a Sudoku solver, a Futoshiki solver, a Kakuro solver, a solver of Map Colouring Problems, a Hidato solver, a Numbrix solver and a Slitherlink solver. <br>
-CSP-Rules-V2.1 is independently available on GitHub: [https://github.com/denis-berthier/CSP-Rules-V2.1](url) and is necessary if you want to run by yourself the examples given in the present repository.<br>
+CSP-Rules-V2.1 is independently available on GitHub: https://github.com/denis-berthier/CSP-Rules-V2.1 and is necessary if you want to run by yourself the examples given in the present repository.<br>
 
 
 <br><br>
