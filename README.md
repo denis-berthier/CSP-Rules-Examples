@@ -147,7 +147,11 @@ They are solvable in T&E(W2, 2) and therefore in T&E(3).<br>
 The tridagon rule (based on a contradictory pattern known as "trivalue oddagon" or "Thor's Hammer") makes it much easier to solve them.<br>
 A third example (972#8), also from mith, applies Tridagon-Forcing-Whips in two-different ways: with function "solve" and with function "solve-w-preferences". In the example, giving Tridagons a preference over whips makes the solution simpler.<br>
 Another series of 13 examples, with names containing ORiFWj (i,j=2,3,....) proposes solutions with ORk-Forcing-Whips based on anti-tridagons. One more example (#1182-many-guardians-W6+OR5FW9)deals with anti-tridagons with a large number of guardians. Try to play in a similar way with the other examples in order to find simpler solutions than those proposed here (which have all been looked for in W8+OR5FW8)<br>
-Finally, several automated proofs that the trivalue oddagon pattern is contradictory are given. This illustrates how CSP-Rules can be used as an assistant theorem prover (as was already shown in the Slitherlink case).
+Finally, the "Triv-Odd-proofs" sub-folder gives several automated proofs that:<br>
+- the trivalue oddagon pattern is contradictory in T&E(3); this illustrates how CSP-Rules can be used as an assistant theorem prover (as was already shown in the Slitherlink case);<br>
+- the degenerated case with one of its cells decided is contradictory in T&E(2);<br>
+- the (less) degenerated case with one of the candidates missing in one of its cells is contradictory in T&E(2).<br>
+This shows that the fact that the proof of contradiction requires T&E(3) is highly dependent on the strict conditions 
 
 
 ### The eleven-impossible-3-digit-patterns folder 
