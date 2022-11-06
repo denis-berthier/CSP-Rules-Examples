@@ -139,19 +139,20 @@ It includes the two examples of how to reduce the number of steps in a resolutio
 
 
 ## The Tridagons folder
-It gives examples of Tridagons (a recently found exotic pattern) and of related patterns, in particular of ORk-Forcing-Whips based on them. Puzzles here are in T&E(3), but they can be solved relatively easily thanks to this exotic pattern.<br>
-All the exaples here are due to Mith.<br>
-Two examples (Loki and variant) are the first two 9x9 puzzles that I found were not solvable in T&E(2).
-They are not even solvable in gT&E(2) = T&E(W1, 2), nor in T&E(S2, 2).<br>
-They are solvable in T&E(W2, 2) and therefore in T&E(3).<br>
-The tridagon rule (based on a contradictory pattern known as "trivalue oddagon" or "Thor's Hammer") makes it much easier to solve them.<br>
-A third example (972#8), also from mith, applies Tridagon-Forcing-Whips in two-different ways: with function "solve" and with function "solve-w-preferences". In the example, giving Tridagons a preference over whips makes the solution simpler.<br>
-Another series of 13 examples, with names containing ORiFWj (i,j=2,3,....) proposes solutions with ORk-Forcing-Whips based on anti-tridagons. One more example (#1182-many-guardians-W6+OR5FW9)deals with anti-tridagons with a large number of guardians. Try to play in a similar way with the other examples in order to find simpler solutions than those proposed here (which have all been looked for in W8+OR5FW8)<br>
-Finally, the "Triv-Odd-proofs" sub-folder gives several automated proofs that:<br>
-- the trivalue oddagon pattern is contradictory in T&E(3); this illustrates how CSP-Rules can be used as an assistant theorem prover (as was already shown in the Slitherlink case);<br>
-- the degenerated case with one of its cells decided is contradictory in T&E(2);<br>
-- the (less) degenerated case with one of the candidates missing in one of its cells is contradictory in T&E(2).<br>
-This shows that the fact that the proof of contradiction requires T&E(3) is highly dependent on the strict conditions 
+- It gives automated proofs showing that the trivalue oddagon pattern is contradictory are given: the full (non-degenerated) pattern in T&E(3) and two degenerated versions in T&E(2). <br>
+This illustrates how CSP-Rules can be used as an assistant theorem prover (as was already shown in the SlitherRules application).
+
+- It also gives a large variety of examples of Tridagons (a recently found exotic pattern) and of related patterns.<br>
+It shows in particular how ORk-Forcing-Whips and ORk-Whips based on them can be used to solve puzzles in T&E(3).<br>
+All the examples here are due to Mith.<br>
+They are not even solvable in gT&E(2) = T&E(W1, 2), nor in T&E(S2, 2).They are solvable in T&E(W2, 2) and therefore in T&E(3).<br>
+In many cases, the tridagon-related rules (based on a contradictory pattern known as "trivalue oddagon" or "Thor's Hammer") make it much easier to solve them.<br>
+The examples are chosen to illustrate the large diversity of situations and resolution paths, intermingling more or less difficult regular chains (such as whips) and more or less difficult  Tridagon-based ORk-chains.<br><br>
+-- Two examples (Loki and variant) are the first two 9x9 puzzles that I found were not solvable in T&E(2).
+A third example (972#8), also from mith, applies Tridagon-Forcing-Whips in two-different ways: with function "solve" and with function "solve-w-preferences". In the example, giving Tridagons a preference over whips makes the solution simpler.<br><br>
+-- One example (#1182-many-guardians) deals with anti-tridagons with a large number of guardians and illustrates ultra-peristency. Try to play in a similar way with the other examples in order to find simpler solutions than those proposed here (which have all been looked for in W8+OR5CH8)<br><br>
+--The other examples, with names containing "Wi+ORkWj" (i,j,k=2,3,....) propose solutions with ORk-Forcing-Whips and ORk-Whips based on anti-tridagons. For definiteness, ?*use-high-Tridagon-salience* is set to TRUE and ?*ORk-Forcing-Whips-before-ORk-Whips* is set to FALSE.<br>
+
 
 
 ### The eleven-impossible-3-digit-patterns folder 
