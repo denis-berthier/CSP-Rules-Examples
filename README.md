@@ -138,6 +138,7 @@ It deals with###
 It includes the two examples of how to reduce the number of steps in a resolution path (as described in section 6.19 of the Basic User Manual): one using mainly chain rules (the pisces2#523-9.0-W7.clp puzzle) and one using mainly Subset rules (the "Tatooine-Tosche-Station.clp" puzzle).
 
 
+
 ## The Tridagons folder
 - It gives automated proofs showing that the trivalue oddagon pattern is contradictory are given: the full (non-degenerated) pattern in T&E(3) and two degenerated versions in T&E(2). <br>
 This illustrates how CSP-Rules can be used as an assistant theorem prover (as was already shown in the SlitherRules application).
@@ -151,7 +152,8 @@ The examples are chosen to illustrate the large diversity of situations and reso
 -- Two examples (Loki and variant) are the first two 9x9 puzzles that I found were not solvable in T&E(2).
 A third example (972#8), also from mith, applies Tridagon-Forcing-Whips in two-different ways: with function "solve" and with function "solve-w-preferences". In the example, giving Tridagons a preference over whips makes the solution simpler.<br><br>
 -- One example (#1182-many-guardians) deals with anti-tridagons with a large number of guardians and illustrates ultra-peristency. Try to play in a similar way with the other examples in order to find simpler solutions than those proposed here (which have all been looked for in W8+OR5CH8)<br><br>
---The other examples, with names containing "Wi+ORkWj" (i,j,k=2,3,....) propose solutions with ORk-Forcing-Whips and ORk-Whips based on anti-tridagons. For definiteness, ?*use-high-Tridagon-salience* is set to TRUE and ?*ORk-Forcing-Whips-before-ORk-Whips* is set to FALSE.<br>
+--The other examples, with names containing "Wi+ORkWj" (i,j,k=2,3,....), propose solutions with ORk-Forcing-Whips and ORk-Whips based on anti-tridagons. For definiteness, ?*use-high-Tridagon-salience* is set to TRUE and ?*ORk-Forcing-Whips-before-ORk-Whips* is set to FALSE.<br>
+Example #16150-W6+9xOR2FW5.clp also shows how function solve-w-preferences can be used, and how careful one must be with it.
 
 
 
