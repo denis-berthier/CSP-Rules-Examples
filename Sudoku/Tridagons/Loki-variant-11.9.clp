@@ -25,9 +25,9 @@ It is close to Loki, but not isomorphic to it.
 
 (solve "........1.....2.......3..45..6.......71.8....32..67..8.6..23....837..1..7.281.6..")
 ***********************************************************************************************
-***  SudoRules 20.1.s based on CSP-Rules 2.1.s, config = W+SFin+TridFW
+***  SudoRules 20.1.s based on CSP-Rules 2.1.s, config = W+OR5FW+OR5W+SFin+Trid
 ***  Using CLIPS 6.32-r823
-***  Running on MacBookPro 16'' M1Max 2021 3.2GHz, 64GB LPDDR5, MacOS 12.5
+***  Running on MacBookPro 16'' M1Max 2021, 64GB LPDDR5, MacOS 12.5
 ***  Download from: https://github.com/denis-berthier/CSP-Rules-V2.1
 ***********************************************************************************************
 ........1.....2.......3..45..6.......71.8....32..67..8.6..23....837..1..7.281.6..
@@ -84,11 +84,11 @@ hidden-pairs-in-a-column: c4{n2 n3}{r4 r5} ==> r5c4≠9, r5c4≠5, r5c4≠4, r4c
    ! 7      459    2      ! 8      1      459    ! 6      359    349    !
    +----------------------+----------------------+----------------------+
 
-tridagon type diag for digits 4, 5 and 9 in blocks:
-        b5, with cells: r6c4 (target cell), r4c5, r5c6
-        b4, with cells: r6c3, r4c2, r5c1
-        b8, with cells: r7c4, r8c5, r9c6
-        b7, with cells: r7c3, r8c1, r9c2
+tridagon for digits 4, 5 and 9 in blocks:
+        b5, with cells: r6c4 (target cell), r5c6, r4c5
+        b4, with cells: r6c3, r5c1, r4c2
+        b8, with cells: r7c4, r9c6, r8c5
+        b7, with cells: r7c3, r9c2, r8c1
  ==> r6c4≠4,5,9
 naked-single ==> r6c4=1
 hidden-single-in-a-block ==> r3c6=1
@@ -105,16 +105,16 @@ finned-x-wing-in-columns: n5{c2 c6}{r9 r4} ==> r4c5≠5
 naked-single ==> r4c5=9
 hidden-single-in-a-column ==> r9c6=9
 naked-pairs-in-a-row: r4{c2 c6}{n4 n5} ==> r4c9≠4, r4c7≠5, r4c7≠4
-biv-chain[3]: c3n9{r7 r6} - r6c8{n9 n5} - r9n5{c8 c2} ==> r7c3≠5
+biv-chain[3]: r9n5{c2 c8} - r6c8{n5 n9} - c3n9{r6 r7} ==> r7c3≠5
 biv-chain[3]: r8c5{n4 n5} - b7n5{r8c1 r9c2} - r9n4{c2 c9} ==> r8c9≠4
 biv-chain[3]: c1n9{r5 r8} - b7n5{r8c1 r9c2} - c2n4{r9 r4} ==> r5c1≠4
 z-chain[3]: r8c9{n9 n2} - r8c8{n2 n5} - r6c8{n5 .} ==> r7c8≠9
-z-chain[3]: c8n7{r2 r7} - c8n8{r7 r2} - r3c7{n8 .} ==> r1c7≠7, r2c9≠7, r2c7≠7
-t-whip[3]: c3n9{r7 r6} - r6c8{n9 n5} - b9n5{r7c8 .} ==> r7c7≠9
-finned-x-wing-in-rows: n9{r7 r6}{c3 c9} ==> r5c9≠9
-t-whip[3]: c8n8{r7 r2} - r3c7{n8 n7} - c8n7{r1 .} ==> r7c8≠5
+z-chain[3]: r3c7{n7 n8} - c8n8{r2 r7} - c8n7{r7 .} ==> r2c9≠7, r2c7≠7, r1c7≠7
 t-whip[3]: r3c7{n8 n7} - c8n7{r2 r7} - r7n8{c8 .} ==> r2c7≠8
-biv-chain[4]: r6c8{n9 n5} - r9n5{c8 c2} - r4c2{n5 n4} - r6n4{c3 c7} ==> r6c7≠9
+t-whip[3]: r7n8{c8 c7} - r3c7{n8 n7} - c8n7{r2 .} ==> r7c8≠5
+t-whip[3]: c3n9{r7 r6} - r6c8{n9 n5} - b9n5{r9c8 .} ==> r7c7≠9
+finned-x-wing-in-rows: n9{r7 r6}{c3 c9} ==> r5c9≠9
+biv-chain[4]: r6c8{n9 n5} - r9n5{c8 c2} - c2n4{r9 r4} - r6n4{c3 c7} ==> r6c7≠9
 finned-x-wing-in-rows: n9{r6 r7}{c3 c8} ==> r8c8≠9
 whip[1]: b9n9{r8c9 .} ==> r2c9≠9
 biv-chain[3]: r9n3{c8 c9} - r2c9{n3 n6} - b6n6{r5c9 r5c8} ==> r5c8≠3
@@ -163,7 +163,7 @@ naked-single ==> r5c4=2
 naked-single ==> r5c9=6
 naked-single ==> r7c8=8
 naked-single ==> r9c2=5
-PUZZLE 0 IS SOLVED. rating-type = W+SFin+TridFW, MOST COMPLEX RULE TRIED = tridagon[12]
+PUZZLE 0 IS SOLVED. rating-type = W+OR5FW+OR5W+SFin+Trid, MOST COMPLEX RULE TRIED = BC[4]
      +-------+-------+-------+
      ! 5 3 4 ! 9 7 8 ! 2 6 1 !
      ! 6 1 8 ! 5 4 2 ! 9 7 3 !
@@ -178,13 +178,14 @@ PUZZLE 0 IS SOLVED. rating-type = W+SFin+TridFW, MOST COMPLEX RULE TRIED = trida
      ! 7 5 2 ! 8 1 9 ! 6 3 4 !
      +-------+-------+-------+
 
-nb-facts = <Fact-23790>
+nb-facts = <Fact-15585>
 Puzzle ........1.....2.......3..45..6.......71.8....32..67..8.6..23....837..1..7.281.6.. :
-init-time = 0.07s, solve-time = 3.46s, total-time = 3.53s
+computer = MacBookPro 16'' M1Max 2021, 64GB LPDDR5, MacOS 12.5
+init-time = 0.09s, solve-time = 0.54s, total-time = 0.63s
 ***********************************************************************************************
-***  SudoRules 20.1.s based on CSP-Rules 2.1.s, config = W+SFin+TridFW
+***  SudoRules 20.1.s based on CSP-Rules 2.1.s, config = W+OR5FW+OR5W+SFin+Trid
 ***  Using CLIPS 6.32-r823
-***  Running on MacBookPro 16'' M1Max 2021 3.2GHz, 64GB LPDDR5, MacOS 12.5
+***  Running on MacBookPro 16'' M1Max 2021, 64GB LPDDR5, MacOS 12.5
 ***  Download from: https://github.com/denis-berthier/CSP-Rules-V2.1
 ***********************************************************************************************
 
