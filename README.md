@@ -149,9 +149,10 @@ All the examples here are due to Mith.<br>
 They are not even solvable in gT&E(2) = T&E(W1, 2), nor in T&E(S2, 2).They are solvable in T&E(W2, 2) and therefore in T&E(3).<br>
 In many cases, the tridagon-related rules (based on a contradictory pattern known as "trivalue oddagon" or "Thor's Hammer") make it much easier to solve them.<br>
 The examples are chosen to illustrate the large diversity of situations and resolution paths, intermingling more or less difficult regular chains (such as whips) and more or less difficult  Tridagon-based ORk-chains.<br><br>
--- Two examples (Loki and variant) are the first two 9x9 puzzles that I found were not solvable in T&E(2).
-A third example (972#8), also from mith, applies Tridagon-Forcing-Whips in two-different ways: with function "solve" and with function "solve-w-preferences". In the example, giving Tridagons a preference over whips makes the solution simpler.<br><br>
--- One example (#1182-many-guardians) deals with anti-tridagons with a large number of guardians and illustrates ultra-peristency. Try to play in a similar way with the other examples in order to find simpler solutions than those proposed here (which have all been looked for in W8+OR5CH8)<br><br>
+-- Two examples (Loki and variant) are the first two 9x9 puzzles that I found were not solvable in T&E(2)..<br><br>
+-- A third example (972#8), also from mith, applies Tridagon-Forcing-Whips in two-different ways: with function "solve" and with function "solve-w-preferences". In the example, giving Tridagons a preference over whips makes the solution simpler.<br><br>
+-- One example (#1182-many-guardians) deals with anti-tridagons with a large number of guardians and illustrates ultra-peristency. Try to play in a similar way with the other examples in order to find simpler solutions than those proposed here (which have all been looked for in W8+OR5CH8).<br><br>
+-- One example (Triple-Double) is an interesting case of combining ORk-whips with eleven replacement; it explains how ultra-peristency of ORk-relations is preserved by replacement.<br><br>
 --The other examples, with names containing "Wi+ORkWj" (i,j,k=2,3,....), propose solutions with ORk-Forcing-Whips and ORk-Whips based on anti-tridagons. For definiteness, ?*use-high-Tridagon-salience* is set to TRUE and ?*ORk-Forcing-Whips-before-ORk-Whips* is set to FALSE.<br>
 Example #16150-W6+9xOR2FW5.clp also shows how function solve-w-preferences can be used, and how careful one must be with it.
 
