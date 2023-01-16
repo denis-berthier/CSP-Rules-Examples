@@ -176,7 +176,7 @@ whip[8]: r9c3{n2 n3} - r9c7{n3 n8} - r8c8{n8 n3} - r1c8{n3 n8} - r1c3{n8 n2} - c
 whip[8]: b9n4{r9c9 r9c8} - c8n5{r9 r3} - c9n5{r3 r7} - r7c5{n5 n2} - b5n2{r4c5 r5c4} - r5c9{n2 n8} - b3n8{r3c9 r1c8} - c3n8{r1 .} ==> r9c9≠3
 OR2-forcing-gwhip-elim[2]:
    || n6r6c8 -
-   || n5r7c9 - 0[1]: c9n3{r7 r456} -
+   || n5r7c9 - partial-gwhip[1]: c9n3{r7 r456} -
  ==> r6c8≠3
 whip[8]: b8n3{r9c4 r9c6} - r9c3{n3 n2} - r5c3{n2 n8} - r5c9{n8 n2} - b9n2{r7c9 r8c8} - r8n3{c8 c2} - r6n3{c2 c9} - r7n3{c9 .} ==> r5c4≠3
 whip[1]: c4n3{r9 .} ==> r9c6≠3
