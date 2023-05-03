@@ -134,6 +134,11 @@ It deals with###
 
 
 
+### Mauricio-W31-GW12-B19-gB11
+It is an extremely rare example of a puzzle with very different W, B, gW and gB ratings
+
+
+
 ### The Fewer-steps folder 
 It includes the two examples of how to reduce the number of steps in a resolution path (as described in section 6.19 of the Basic User Manual): one using mainly chain rules (the pisces2#523-9.0-W7.clp puzzle) and one using mainly Subset rules (the "Tatooine-Tosche-Station.clp" puzzle).
 
@@ -163,8 +168,9 @@ It gives a complete analysis of eleven's list of 3-digit patterns, allowing to f
 
 
 
-### Mauricio-W31-GW12-B19-gB11
-It is an extremely rare example of a puzzle with very different W, B, gW and gB ratings
+### The Imp630 folder 
+It gives a large number of examples for T&E(3) puzzles, with solutions based on eleven's 630 impossible 3-digit patterns. Names of the files refer to the number of the puzzle in mith's list of 156,278 T&E(3) min-expands. They also refer to the impossible patterns used to solve them.
+
 
 
 ### Metcalf-B7B 
