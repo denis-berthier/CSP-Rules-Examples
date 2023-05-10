@@ -32,18 +32,21 @@ If you want to run the examples for yourself with the CSP-Rules-V2.1 software (s
 
 
 <br><br>
-**Sections 4 to 10 describe the contents of each application folder.** WORK IN PROGRESS.
+**Sections 4 to 10 describe the contents of each application folder.** WORK IN PROGRESS.<br>
+For easier reading,the SudoRules section is divided into two parts:
+- 4a: SudoRules and Sudoku examples,
+- 4b: SudoRules and large scale Sudoku studies.
 
 <br><br>
-## 4. SudoRules and Sudoku examples
+## 4a. SudoRules and Sudoku examples
 Sudoku was my first application of CSP-Rules (indeed, several versions of SudoRules existed before I re-wrote part of it in order to create the generic CSP-Rules solver). Also, Sudoku has given rise to many independent studies. Those are the main two reasons why there are more examples here for Sudoku than for any other logic puzzle.<br>
 GENERAL WARNINGS AND REMINDERS:
 - apart from the Subset and the CLIPS examples, the Sudoku examples in this folder are much harder in the mean than random puzzles - which are much harder in the mean than puzzles proposed in newspapers or magazines.
 - more precisely, more than 99.9% of the Sudoku puzzles (taken randomly) are solvable by whips of length <= 7.
 - more than 99.8% of the Sudoku puzzles (taken randomly) are solvable by typed-whips.
 
-As a result, starting from thge Magictour collection, many examples in this folder will generally take more time and memory for finding a solution.
-More typical results can be obtained with the controlled-bias examples in folder cbg-000.
+As a result, starting from the Magictour collection, many examples in this folder will generally take more time and memory for finding a solution.
+More typical results can be obtained with the controlled-bias examples in folder cbg-000 (section 4b).
 
 
 
@@ -58,7 +61,7 @@ To re-run these examples, activate only the following rules:<br>
 
 
 ### The Mith-puzzles folder
-It contains quite exceptional puzzles, in the sense that they have unusually large numbers of Subsets and/or Finned-Fish.
+It contains puzzles created by mith that are quite exceptional in the sense that they have unusually large numbers of Subsets and/or Finned-Fish.
 
 
 
@@ -79,18 +82,6 @@ Memory requirements seem to be similar.
 
 Unfortunately, the resolution rules for Sudoku encoded in CLIPS are too elementary to be able to solve complex puzzles.
 As a more serious comparison requires to compare harder puzzles than those provided with CLIPS, I  have added a function CLIPS-solve-string allowing to do this without having to assert manually all the initial facts as in the original CLIPS solver.  It is available in file "string-input.clp". See the README file of the CLIPS-puzzles folder for details. Quick tests with not  too easy puzzles taken from the cbg-000 collection show that the resolution power of CLIPS-sudoku is very weak.
-
-
-
-
-### The cbg-000 folder 
-It contains the 21,375 first series of puzzles in the controlled-bias collection (the full collection can be found here: https://github.com/denis-berthier/Controlled-bias_Sudoku_generator_and_collection).<br>
-It explains how to compute their various ratings (in file "launch.txt").<br>
-It contains the detailed results for all of these possible ratings, based on CSP-Rules (plus their SER — Sudoku Explainer Rating).<br>
-It has a detailed comparison of them (in file "comparisons.txt" or "comparisons.rtf"), showing that they differ only in rare cases. It is the most precise comparison ever made of the different CSP-Rules ratings (more precise than what I previously published in [PBCS]).
-
-
-Puzzle "cbg-000/#2862-W7-S+W3-gW2.clp" is one of the very rare examples in the cbg-000 collection where the various ratings are significantly different. It is also an excellent examples of g-whips[2].
 
 
 
@@ -144,13 +135,13 @@ It includes the two examples of how to reduce the number of steps in a resolutio
 
 
 
-## The Tridagons folder
+### The Tridagons folder
 - It gives automated proofs showing that the trivalue oddagon pattern is contradictory are given: the full (non-degenerated) pattern in T&E(3) and two degenerated versions in T&E(2). <br>
 This illustrates how CSP-Rules can be used as an assistant theorem prover (as was already shown in the SlitherRules application).
 
 - It also gives a large variety of examples of Tridagons (a recently found exotic pattern) and of related patterns.<br>
 It shows in particular how ORk-Forcing-Whips and ORk-Whips based on them can be used to solve puzzles in T&E(3).<br>
-All the examples here are due to Mith.<br>
+All the puzzles here were created by Mith.<br>
 They are not even solvable in gT&E(2) = T&E(W1, 2), nor in T&E(S2, 2).They are solvable in T&E(W2, 2) and therefore in T&E(3).<br>
 In many cases, the tridagon-related rules (based on a contradictory pattern known as "trivalue oddagon" or "Thor's Hammer") make it much easier to solve them.<br>
 The examples are chosen to illustrate the large diversity of situations and resolution paths, intermingling more or less difficult regular chains (such as whips) and more or less difficult  Tridagon-based ORk-chains.<br><br>
@@ -160,11 +151,6 @@ The examples are chosen to illustrate the large diversity of situations and reso
 -- One example (Triple-Double) is an interesting case of combining ORk-whips with eleven replacement; it explains how ultra-peristency of ORk-relations is preserved by replacement.<br><br>
 --The other examples, with names containing "Wi+ORkWj" (i,j,k=2,3,....), propose solutions with ORk-Forcing-Whips and ORk-Whips based on anti-tridagons. For definiteness, ?*use-high-Tridagon-salience* is set to TRUE and ?*ORk-Forcing-Whips-before-ORk-Whips* is set to FALSE.<br>
 Example #16150-W6+9xOR2FW5.clp also shows how function solve-w-preferences can be used, and how careful one must be with it.
-
-
-
-### The eleven-impossible-3-digit-patterns folder 
-It gives a complete analysis of eleven's list of 3-digit patterns, allowing to find that only one of them requires more than T&E(2) to be proven contradictory. After the trivalue oddagon pattern, this is the second such pattern.
 
 
 
@@ -193,12 +179,37 @@ To re-run this example with sk-loops, activate only the following rules:<br>
  (bind ?*whips-max-length* 4)<br>
  (bind ?*braids-max-length* 4)<br>
 
+<br>
+Contrary to 9x9 Sudoku, larger grids are very likely to require T&E. The few examples given here are on the easy side: 
 
-Contrary to 9x9 Sudoku, larger grids are very likely to require T&E. The few examples given here are on the easy side:
-### 16x16
+
+### 16x16 
 It is a small set of 16x16 grids. Don't forget to change grid-size in the configuration file before running them.
+
+
 ### 25x25+ 
-is a small set of still larger grids. Don't forget to change grid-size in the configuration file before running them.
+It is a small set of still larger grids. Don't forget to change grid-size in the configuration file before running them.
+
+<br><br>
+## 4b. SudoRules and large scale Sudoku studies
+
+### The cbg-000 folder 
+It contains the 21,375 first series of puzzles in the controlled-bias collection (the full collection can be found here: https://github.com/denis-berthier/Controlled-bias_Sudoku_generator_and_collection).<br>
+It explains how to compute their various ratings (in file "launch.txt").<br>
+It contains the detailed results for all of these possible ratings, based on CSP-Rules (plus their SER — Sudoku Explainer Rating).<br>
+It has a detailed comparison of them (in file "comparisons.txt" or "comparisons.rtf"), showing that they differ only in rare cases. It is the most precise comparison ever made of the different CSP-Rules ratings (more precise than what I previously published in [PBCS]).
+
+
+Puzzle "cbg-000/#2862-W7-S+W3-gW2.clp" is one of the very rare examples in the cbg-000 collection where the various ratings are significantly different. It is also an excellent examples of g-whips[2].
+
+
+
+### The eleven-impossible-3-digit-patterns folder 
+It gives a complete analysis of eleven's list of 3-digit patterns, allowing to find that only one of them requires more than T&E(2) to be proven contradictory. After the trivalue oddagon pattern, this is the second such pattern.
+
+### The T&E(3)-min-expands folder 
+
+(forthcoming)
 
 
 <br><br>
