@@ -154,10 +154,6 @@ Example #16150-W6+9xOR2FW5.clp also shows how function solve-w-preferences can b
 
 
 
-### The Imp630 folder 
-It gives a large number of examples for T&E(3) puzzles, with solutions based on eleven's 630 impossible 3-digit patterns. Names of the files refer to the number of the puzzle in mith's list of 156,278 T&E(3) min-expands. They also refer to the impossible patterns used to solve them.
-
-
 
 ### Metcalf-B7B 
 It is an example where T&E is used in order to determine the B?B classification. <br>
@@ -206,6 +202,12 @@ Puzzle "cbg-000/#2862-W7-S+W3-gW2.clp" is one of the very rare examples in the c
 
 ### The eleven-impossible-3-digit-patterns folder 
 It gives a complete analysis of eleven's list of 3-digit patterns, allowing to find that only one of them requires more than T&E(2) to be proven contradictory. After the trivalue oddagon pattern, this is the second such pattern.
+
+
+
+### The Imp630 folder 
+It gives a large number of examples for T&E(3) puzzles, with solutions based on eleven's 630 impossible 3-digit patterns. Names of the files refer to the number of the puzzle in mith's list of 156,278 T&E(3) min-expands. They also refer to the impossible patterns used to solve them.
+
 
 ### The T&E(3)-min-expands folder 
 
