@@ -201,7 +201,7 @@ Puzzle "cbg-000/#2862-W7-S+W3-gW2.clp" is one of the very rare examples in the c
 
 
 ### The eleven-impossible-3-digit-patterns folder 
-It gives a complete analysis of eleven's list of 3-digit patterns, allowing to find that only one of them requires more than T&E(2) to be proven contradictory. After the trivalue oddagon pattern, this is the second such pattern.
+It gives a complete analysis of eleven's list of 630 3-digit patterns, allowing to find that only one of them requires more than restricted-T&E(2) to be proven contradictory. After the trivalue oddagon pattern, this is the second such pattern. But the difference with Tridagon is, it can be proven contradictory in the full T&E(2).
 
 
 
