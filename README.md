@@ -1,6 +1,6 @@
 # CSP-Rules-Examples<br><br>
 
-## Examples and results for the various logic puzzles included in the CSP-Rules-V2.1 software</b><br><br>
+## Examples and large scale studies for the various logic puzzles included in the CSP-Rules-V2.1 software</b><br><br>
 
 
 
@@ -9,9 +9,12 @@
 A _finite binary Constraint Satisfaction Problems_ (CSP) is defined by a finite set of variables (hereafter called the CSP-Variables), each with a finite domain; the problem is to find a value for each variable in its domain, in such a way that these values satisfy a set of pre-defined binary constraints. A typical popular example is Sudoku.<br>
 
 **_CSP-Rules is a general pattern-based (or rule-based) solver of finite binary CSPs_**. <br>
+It is mainly based on a small set of generic families of resolution rules ("generic" means that they are valid in any finite binary CSP).<br>
 
 It includes a Latin Squares solver, a Sudoku solver, a Futoshiki solver, a Kakuro solver, a solver of Map Colouring Problems, a Hidato solver, a Numbrix solver and a Slitherlink solver. <br>
 CSP-Rules-V2.1 is independently available on GitHub: https://github.com/denis-berthier/CSP-Rules-V2.1 and is necessary if you want to run by yourself the examples given in the present repository.<br>
+
+Notice that the purpose of this repository is not to explain the concepts mentioned below. For this, you need to refer to my original publications in [PBCS] and [AUM] as listed on https://github.com/denis-berthier/CSP-Rules-V2.1 .
 
 
 <br><br>
@@ -120,23 +123,22 @@ Obviously, solutions with g-whips and braids will take more time and memory than
 
 
 ### The Urhegyi-8.5 folder 
-It deals with###
- the example of 2-step solutions discussed in sections 6.15 to 6.18 of the Basic User Manual, with all the details.
+It deals wit the example of 2-step solutions discussed in sections 6.15 to 6.18 of the Basic User Manual, with all the details.
 
 
 
 ### Mauricio-W31-GW12-B19-gB11
-It is an extremely rare example of a puzzle with very different W, B, gW and gB ratings
+It is an extremely rare example of a puzzle with very different W, B, gW and gB ratings and also an example of a very long whip (length 31).
 
 
 
 ### The Fewer-steps folder 
-It includes the two examples of how to reduce the number of steps in a resolution path (as described in section 6.19 of the Basic User Manual): one using mainly chain rules (the pisces2#523-9.0-W7.clp puzzle) and one using mainly Subset rules (the "Tatooine-Tosche-Station.clp" puzzle).
+It includes two examples of how to reduce the number of steps in a resolution path (as described in section 6.19 of the Basic User Manual): one using mainly chain rules (the pisces2#523-9.0-W7.clp puzzle) and one using mainly Subset rules (the "Tatooine-Tosche-Station.clp" puzzle).
 
 
 
 ### The Tridagons folder
-- It gives automated proofs showing that the trivalue oddagon pattern is contradictory are given: the full (non-degenerated) pattern in T&E(3) and two degenerated versions in T&E(2). <br>
+- It gives automated proofs showing that the trivalue oddagon pattern is contradictory: the full (non-degenerated) pattern in T&E(3) and two degenerated versions in T&E(2). <br>
 This illustrates how CSP-Rules can be used as an assistant theorem prover (as was already shown in the SlitherRules application).
 
 - It also gives a large variety of examples of Tridagons (a recently found exotic pattern) and of related patterns.<br>
@@ -193,15 +195,16 @@ It is a small set of still larger grids. Don't forget to change grid-size in the
 It contains the 21,375 first series of puzzles in the controlled-bias collection (the full collection can be found here: https://github.com/denis-berthier/Controlled-bias_Sudoku_generator_and_collection).<br>
 It explains how to compute their various ratings (in file "launch.txt").<br>
 It contains the detailed results for all of these possible ratings, based on CSP-Rules (plus their SER — Sudoku Explainer Rating).<br>
-It has a detailed comparison of them (in file "comparisons.txt" or "comparisons.rtf"), showing that they differ only in rare cases. It is the most precise comparison ever made of the different CSP-Rules ratings (more precise than what I previously published in [PBCS]).
+It has a detailed comparison of them (in file "comparisons.txt" or "comparisons.rtf"), showing that they differ only in rare cases. It is the most precise comparison ever made of the different CSP-Rules ratings (more precise than what I previously published in [PBCS]).<br>
+The results in this folder involve thousands of hours of processor time.
 
 
-Puzzle "cbg-000/#2862-W7-S+W3-gW2.clp" is one of the very rare examples in the cbg-000 collection where the various ratings are significantly different. It is also an excellent examples of g-whips[2].
+Puzzle "cbg-000/#2862-W7-S+W3-gW2.clp" is one of the very rare examples in the cbg-000 collection where the various ratings are significantly different. It is also an excellent example of g-whips[2].
 
 
 
 ### The eleven-impossible-3-digit-patterns folder 
-It gives a complete analysis of eleven's list of 630 3-digit patterns, allowing to find that only one of them requires more than restricted-T&E(2) to be proven contradictory. After the trivalue oddagon pattern, this is the second such pattern. But the difference with Tridagon is, it can be proven contradictory in the full T&E(2).
+It gives a complete analysis of eleven's list of 630 3-digit patterns in two bands or two stacks, allowing to find that only one of them requires more than restricted-T&E(2) to be proven contradictory (in restricted-T&E, only candidates in the pattern may be used as T&E hypotheses). After the trivalue oddagon pattern, this is the second such pattern. But the difference with Tridagon is, it can be proven contradictory in the full T&E(2).
 
 
 
@@ -218,7 +221,7 @@ It gives a large number of examples for T&E(3) puzzles, with solutions based on 
 ## 5. LatinRules and LatinSquares examples<br>
 All the classical Latin Square examples come from http://forum.enjoysudoku.com/latin-squares-and-latin-square-puzzles-t36895.html, where more examples can be found.<br>
 I've chosen the first four because they have large Subsets (size 3 or 4) and the last two because they are very difficult.<br>
-See also the examples for the Pandiagonal variant, chosen because they have "diagonal" Subsets.
+As for the examples for the Pandiagonal variant, theyy have been chosen because they have "diagonal" and "anti-diagonal" Subsets.
 
 
 <br><br>
@@ -315,7 +318,7 @@ https://mellowmelon.files.wordpress.com/2012/01/pack01slitherlinkv3.pdf<br>
 
 <br><br>
 ## 11. License
-Strictly speaking, there is little software parts in CSP-Rules-Examples. Whichever piece of software may be found here is distributed under the GNU GPL v3.0 license (see the full text in the Docs folder).<br>
+Strictly speaking, there is little software in CSP-Rules-Examples. Whichever piece of software may be found here is distributed under the GNU GPL v3.0 license (see the full text in the Docs folder).<br>
 Puzzles remain the intellectual property of their creators.<br>
 Puzzle solutions are my intellectual property.<br><br>
 
