@@ -152,7 +152,9 @@ The examples are chosen to illustrate the large diversity of situations and reso
 -- One example (#1182-many-guardians) deals with anti-tridagons with a large number of guardians and illustrates ultra-peristency. Try to play in a similar way with the other examples in order to find simpler solutions than those proposed here (which have all been looked for in W8+OR5CH8).<br><br>
 -- One example (Triple-Double) is an interesting case of combining ORk-whips with eleven replacement; it explains how ultra-peristency of ORk-relations is preserved by replacement.<br><br>
 --The other examples, with names containing "Wi+ORkWj" (i,j,k=2,3,....), propose solutions with ORk-Forcing-Whips and ORk-Whips based on anti-tridagons. For definiteness, ?*use-high-Tridagon-salience* is set to TRUE and ?*ORk-Forcing-Whips-before-ORk-Whips* is set to FALSE.<br>
-Example #16150-W6+9xOR2FW5.clp also shows how function solve-w-preferences can be used, and how careful one must be with it.
+Example #16150-W6+9xOR2FW5.clp also shows how function solve-w-preferences can be used, and how careful one must be with it.<br>
+Example #6050(6277)-Trid+W6-vs-Trid+gW4.clp is the simplest case I found where using g-chains leads to a smaller rating.<br>
+Examples #1418-W8+OR5W8-vs-gW6+OR5gW6.clp and #5383-W9+OR5W9-vs-gW6+OR5gW6.clp are two other such cases, where only ordinary g-whips vs ORk-gwhips make the difference.
 
 
 
@@ -192,11 +194,12 @@ It is a small set of still larger grids. Don't forget to change grid-size in the
 ## 4b. SudoRules and large scale Sudoku studies
 
 ### The cbg-000 folder 
-It contains the 21,375 first series of puzzles in the controlled-bias collection (the full collection can be found here: https://github.com/denis-berthier/Controlled-bias_Sudoku_generator_and_collection).<br>
+It contains the 21,375 first series of puzzles in the controlled-bias collection.<br>
 It explains how to compute their various ratings (in file "launch.txt").<br>
 It contains the detailed results for all of these possible ratings, based on CSP-Rules (plus their SER — Sudoku Explainer Rating).<br>
 It has a detailed comparison of them (in file "comparisons.txt" or "comparisons.rtf"), showing that they differ only in rare cases. It is the most precise comparison ever made of the different CSP-Rules ratings (more precise than what I previously published in [PBCS]).<br>
-The results in this folder involve thousands of hours of processor time.
+The results in this folder involve thousands of hours of processor time.<br>
+(Note: the full controlled-bias collection of 5,926,343 puzzles and their W ratings can be found here, together with the SER rating for the first 3,037,717 of them: https://github.com/denis-berthier/Controlled-bias_Sudoku_generator_and_collection).
 
 
 Puzzle "cbg-000/#2862-W7-S+W3-gW2.clp" is one of the very rare examples in the cbg-000 collection where the various ratings are significantly different. It is also an excellent example of g-whips[2].
@@ -210,6 +213,7 @@ It gives a complete analysis of eleven's list of 630 3-digit patterns in two ban
 
 ### The Imp630 folder 
 It gives a large number of examples for T&E(3) puzzles, with solutions based on eleven's 630 impossible 3-digit patterns. Names of the files refer to the number of the puzzle in mith's list of 156,278 T&E(3) min-expands. They also refer to the impossible patterns used to solve them.
+
 
 
 ### The T&E(3)-min-expands folder 
