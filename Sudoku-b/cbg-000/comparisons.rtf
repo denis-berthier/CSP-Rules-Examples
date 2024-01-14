@@ -1,4 +1,4 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2639
+{\rtf1\ansi\ansicpg1252\cocoartf2759
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;\f1\froman\fcharset0 TimesNewRomanPS-BoldMT;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
@@ -29,7 +29,7 @@ As in the above results of [PBCS], whips and g-whips are supposed to be loopless
 The cbg-000 collection used for the following results is made of the first 21,375 puzzles in my controlled-bias collection of 5,926,343 minimal puzzles. It is itself a controlled-bias collection. It is thus less biased than the top-down collection used for the comparison in [PBCS]. But the same results hold.\
 \
 A secondary purpose of this cbg-000 collection is to make it a reference for any quick statistical comparison with any other ratings.\
-(The full collection of 5,926,343 minimal puzzles,is also on GitHub \'97 https://github.com/denis-berthier/Controlled-bias_Sudoku_generator_and_collection \'97 but it has only the W ratings).\
+(The full collection of 5,926,343 minimal puzzles is also on GitHub \'97 https://github.com/denis-berthier/Controlled-bias_Sudoku_generator_and_collection \'97 but it has fewer types of ratings).\
 \
 \
 \
@@ -68,9 +68,77 @@ Function used:\
 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
-\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
 
-\f1\b\fs36 W vs B
+\f1\b\fs36 W vs gW
+\f0\b0\fs28 : \
+\
+Note that one must always have W \uc0\u8805  gW\
+In reality, there are only 48 differences, i.e. a proportion of 0,22% differences.\
+And there are only 5 cases with difference > 1 (0,023%) and only one with difference > 2.\
+\
+\
+#41; W5; gW4\
+#119; W6; gW5\
+#451; W5; gW4\
+#1249; W3; gW2\
+#2412; W7; gW5 <<<<<<<<\
+#2524; W6; gW5\
+#2812; W4; gW3\
+#2862; W7; gW2 <<<<<<<< <<<<<<<<\
+#3988; W5; gW4\
+#4041; W6; gW5\
+#5233; W5; gW4\
+#5757; W6; gW5\
+#5796; W7; gW6\
+#5931; W7; gW5 <<<<<<<<\
+#6144; W5; gW4\
+#7770; W5; gW4\
+#7772; W9; gW8\
+#8313; W6; gW5\
+#8340; W7; gW6\
+#8981; W4; gW3\
+#9117; W7; gW6\
+#9152; W5; gW4\
+#9595; W6; gW5\
+#9812; W3; gW2\
+#10086; W7; gW6\
+#10188; W5; gW4\
+#10288; W7; gW6\
+#11437; W6; gW5\
+#12176; W7; gW6\
+#13514; W5; gW4\
+#13574; W7; gW6\
+#14800; W5; gW4\
+#15672; W8; gW7\
+#15873; W6; gW5\
+#16155; W8; gW7\
+#16496; W4; gW3\
+#16630; W7; gW5 <<<<<<<<\
+#16845; W12; gW11\
+#17018; W5; gW4\
+#17529; W5; gW4\
+#17598; W6; gW5\
+#17942; W4; gW3\
+#18012; W5; gW4\
+#18494; W11; gW9 <<<<<<<<\
+#18495; W4; gW3\
+#19550; W8; gW7\
+#19868; W4; gW3\
+#21138; W5; gW4\
+\
+\
+\
+\
+----------------------------------------------------------------------------------------------------------------\
+----------------------------------------------------------------------------------------------------------------\
+----------------------------------------------------------------------------------------------------------------\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b\fs36 \cf0 W vs B
 \f0\b0\fs28 : \
 \
 Note that one must always have W \uc0\u8805  B\
@@ -149,67 +217,73 @@ And there are only 4 cases with difference > 1 (0,020%) and none with difference
 \
 \
 \
-----------------------------------------------------------------------------------------------------------------\
-----------------------------------------------------------------------------------------------------------------\
-----------------------------------------------------------------------------------------------------------------\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
 \
 
-\f1\b\fs36 W vs gW
+\f1\b\fs36 gW vs gB
 \f0\b0\fs28 : \
 \
-Note that one must always have W \uc0\u8805  gW\
+Note that one must always have gW \uc0\u8805  gB\
 In reality, there are only 48 differences, i.e. a proportion of 0,22% differences.\
-And there are only 5 cases with difference > 1 (0,023%) and only one with difference > 2.\
+And there are only 2 cases with difference > 1 (0,01%) and none with difference > 2.\
 \
 \
-#41; W5; gW4\
-#119; W6; gW5\
-#451; W5; gW4\
-#1249; W3; gW2\
-#2412; W7; gW5 <<<<<<<<\
-#2524; W6; gW5\
-#2812; W4; gW3\
-#2862; W7; gW2 <<<<<<<< <<<<<<<<\
-#3988; W5; gW4\
-#4041; W6; gW5\
-#5233; W5; gW4\
-#5757; W6; gW5\
-#5796; W7; gW6\
-#5931; W7; gW5 <<<<<<<<\
-#6144; W5; gW4\
-#7770; W5; gW4\
-#7772; W9; gW8\
-#8313; W6; gW5\
-#8340; W7; gW6\
-#8981; W4; gW3\
-#9117; W7; gW6\
-#9152; W5; gW4\
-#9595; W6; gW5\
-#9812; W3; gW2\
-#10086; W7; gW6\
-#10188; W5; gW4\
-#10288; W7; gW6\
-#11437; W6; gW5\
-#12176; W7; gW6\
-#13514; W5; gW4\
-#13574; W7; gW6\
-#14800; W5; gW4\
-#15672; W8; gW7\
-#15873; W6; gW5\
-#16155; W8; gW7\
-#16496; W4; gW3\
-#16630; W7; gW5 <<<<<<<<\
-#16845; W12; gW11\
-#17018; W5; gW4\
-#17529; W5; gW4\
-#17598; W6; gW5\
-#17942; W4; gW3\
-#18012; W5; gW4\
-#18494; W11; gW9 <<<<<<<<\
-#18495; W4; gW3\
-#19550; W8; gW7\
-#19868; W4; gW3\
-#21138; W5; gW4\
+#9: gW = 5; gB = 4; diff = 1\
+#36: gW = 6; gB = 5; diff = 1\
+#109: gW = 9; gB = 7; diff = 2\
+#990: gW = 6; gB = 5; diff = 1\
+#1908: gW = 7; gB = 6; diff = 1\
+#2415: gW = 6; gB = 5; diff = 1\
+#3526: gW = 5; gB = 4; diff = 1\
+#3551: gW = 8; gB = 7; diff = 1\
+#4918: gW = 10; gB = 8; diff = 2\
+#5005: gW = 6; gB = 5; diff = 1\
+#5236: gW = 6; gB = 5; diff = 1\
+#5536: gW = 6; gB = 5; diff = 1\
+#6009: gW = 6; gB = 5; diff = 1\
+#6419: gW = 6; gB = 5; diff = 1\
+#6926: gW = 8; gB = 7; diff = 1\
+#7354: gW = 6; gB = 5; diff = 1\
+#7625: gW = 7; gB = 6; diff = 1\
+#7656: gW = 7; gB = 6; diff = 1\
+#7957: gW = 5; gB = 4; diff = 1\
+#8422: gW = 7; gB = 6; diff = 1\
+#9095: gW = 5; gB = 4; diff = 1\
+#9663: gW = 9; gB = 8; diff = 1\
+#10296: gW = 7; gB = 6; diff = 1\
+#10426: gW = 7; gB = 6; diff = 1\
+#10580: gW = 7; gB = 6; diff = 1\
+#11521: gW = 6; gB = 5; diff = 1\
+#12896: gW = 6; gB = 5; diff = 1\
+#13269: gW = 9; gB = 8; diff = 1\
+#13841: gW = 8; gB = 7; diff = 1\
+#14090: gW = 5; gB = 4; diff = 1\
+#14180: gW = 7; gB = 6; diff = 1\
+#14434: gW = 7; gB = 6; diff = 1\
+#14638: gW = 8; gB = 7; diff = 1\
+#15001: gW = 6; gB = 5; diff = 1\
+#15385: gW = 5; gB = 4; diff = 1\
+#16325: gW = 6; gB = 5; diff = 1\
+#16410: gW = 7; gB = 6; diff = 1\
+#16579: gW = 8; gB = 7; diff = 1\
+#16845: gW = 11; gB = 10; diff = 1\
+#17106: gW = 6; gB = 5; diff = 1\
+#18723: gW = 6; gB = 5; diff = 1\
+#19600: gW = 6; gB = 5; diff = 1\
+#19909: gW = 8; gB = 7; diff = 1\
+#20108: gW = 8; gB = 7; diff = 1\
+#20528: gW = 6; gB = 5; diff = 1\
+#21053: gW = 6; gB = 5; diff = 1\
+#21158: gW = 7; gB = 6; diff = 1\
+#21282: gW = 5; gB = 4; diff = 1\
+\
+48 differences (0.22 %)\
+48 positive differences\
+0 negative differences\
 \
 \
 \
@@ -219,7 +293,69 @@ And there are only 5 cases with difference > 1 (0,023%) and only one with differ
 ----------------------------------------------------------------------------------------------------------------\
 \
 
-\f1\b\fs36 W vs FW
+\f1\b\fs36 B vs gB
+\f0\b0\fs28 : \
+\
+Note that one must always have B \uc0\u8805  gB\
+In reality, there are only 32 differences, i.e. a proportion of 0,15 % differences.\
+And there are only 2 cases with difference > 1 (0,01%) and only 1 with difference > 2.\
+\
+\
+(compare-ratings-in-files\
+    B\
+    gB\
+    (str-cat ?*CBGC* "GLOBAL-CB-RESULTS/all-B-ratings.txt")\
+    (str-cat ?*CBGC* "GLOBAL-CB-RESULTS/all-gB-ratings.txt")\
+    21375\
+)\
+#41: B = 5; gB = 4; diff = 1\
+#451: B = 5; gB = 4; diff = 1\
+#1249: B = 3; gB = 2; diff = 1\
+#2524: B = 6; gB = 5; diff = 1\
+#2812: B = 4; gB = 3; diff = 1\
+#2862: B = 6; gB = 2; diff = 4\
+#4918: B = 9; gB = 8; diff = 1\
+#5233: B = 5; gB = 4; diff = 1\
+#5757: B = 6; gB = 5; diff = 1\
+#5931: B = 6; gB = 5; diff = 1\
+#6009: B = 6; gB = 5; diff = 1\
+#6144: B = 5; gB = 4; diff = 1\
+#7625: B = 7; gB = 6; diff = 1\
+#7770: B = 5; gB = 4; diff = 1\
+#8981: B = 4; gB = 3; diff = 1\
+#9595: B = 6; gB = 5; diff = 1\
+#9812: B = 3; gB = 2; diff = 1\
+#10188: B = 5; gB = 4; diff = 1\
+#10426: B = 7; gB = 6; diff = 1\
+#12176: B = 7; gB = 6; diff = 1\
+#13514: B = 5; gB = 4; diff = 1\
+#14800: B = 5; gB = 4; diff = 1\
+#15385: B = 5; gB = 4; diff = 1\
+#16496: B = 4; gB = 3; diff = 1\
+#16630: B = 7; gB = 5; diff = 2\
+#17942: B = 4; gB = 3; diff = 1\
+#18012: B = 5; gB = 4; diff = 1\
+#18495: B = 4; gB = 3; diff = 1\
+#19550: B = 8; gB = 7; diff = 1\
+#19868: B = 4; gB = 3; diff = 1\
+#21138: B = 5; gB = 4; diff = 1\
+#21282: B = 5; gB = 4; diff = 1\
+\
+32 differences (0.15 %)\
+32 positive differences\
+0 negative differences\
+\
+\
+\
+\
+----------------------------------------------------------------------------------------------------------------\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 ----------------------------------------------------------------------------------------------------------------\
+----------------------------------------------------------------------------------------------------------------\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b\fs36 \cf0 W vs FW
 \f0\b0\fs28 : \
 \
 Note that one must always have W \uc0\u8805  FW\
