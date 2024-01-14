@@ -43,6 +43,7 @@ For easier reading,the SudoRules section is divided into two parts:
 <br><br>
 ## 4a. SudoRules and Sudoku examples
 Sudoku was my first application of CSP-Rules (indeed, several versions of SudoRules existed before I re-wrote part of it in order to create the generic CSP-Rules solver). Also, Sudoku has given rise to many independent studies. Those are the main two reasons why there are more examples here for Sudoku than for any other logic puzzle.<br>
+
 GENERAL WARNINGS AND REMINDERS:
 - apart from the Subset and the CLIPS examples, the Sudoku examples in this folder are much harder in the mean than random puzzles - which are much harder in the mean than puzzles proposed in newspapers or magazines.
 - more precisely, more than 99.9% of the Sudoku puzzles (taken randomly) are solvable by whips of length <= 7.
