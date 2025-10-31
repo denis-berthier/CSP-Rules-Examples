@@ -3,6 +3,7 @@
 ## Examples and large scale studies for the various logic puzzles included in the CSP-Rules-V2.1 software</b><br><br>
 
 
+<a href="https://doi.org/10.5281/zenodo.17491707"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.17491707.svg" alt="DOI"></a>
 
 <br><br>
 ## 1. What is CSP-Rules-V2.1?
